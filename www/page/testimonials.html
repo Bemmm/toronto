@@ -1,0 +1,50 @@
+
+<script>
+       initFancyBox();
+</script>
+<carousel interval="10000">
+    <slide ng-repeat="slide in slides" active="slide.active" style="max-height:800px; overflow:hidden;">
+        <img ng-src="{{slide.image}}" alt="">
+
+    </slide>
+
+</carousel>
+
+<div class="container-pad50">
+<div class="container">
+    <div class="container-pad20 text-center">
+        <h1>Customer <span>Testimonials</span></h1>
+    </div>
+</div>
+    <div class="row container-pad20 testiimonial-item" ng-repeat="item in testimonials | limitTo : testimonialsLimit">
+        <div class="container">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 container-pad50">
+                <h2>{{item.customer}}</h2>
+                <h4>{{item.feedback}}</h4>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+               <div class="testimonial-img-small">
+                    <img src="{{item.image}}" alt=""/>
+               </div>
+            </div>            
+        </div>
+    </div>
+            <div class="container-pad50 text-center">
+                <button type="button" ng-click="testimonialsLimit = testimonialsLimit + 10;" ng-hide="testimonialsLimit>=testimonials.length;"  class="btn btn-default" aria-label="Left Align"><span>Load More</span></button>
+            </div>    
+</div>
+<!--     <div class="row container-pad50">
+        <div class="container">
+ 
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+               <div class="testimonial-img">
+                    <img src="images/testimonial.jpg" alt=""/>
+               </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 container-pad50">
+                <h2>Robert &amp; Elaine Bell</h2>
+                <h4>We are very pleased with the installation of our new counter tops.  They look great.  You run a nice family business and you treated us fairly, good prices and good workmanship, you also made us feel like family.  A nice all around experieince. </h4>
+              
+            </div>
+        </div>
+    </div> -->

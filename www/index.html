@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Toronto Granite</title>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!-- //Custom Theme files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="css/image_loader.css" rel="stylesheet" >
+    <link href="css/style.css?1.2" type="text/css" rel="stylesheet" media="all">
+    <link href="css/jquery.fancybox.css" type="text/css" rel="stylesheet" media="all">
+
+
+    <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
+
+    <!--web-font-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
+    <!--//web-font-->
+    <!--	jquery-->
+    <script src="libs/jquery-1.11.2.min.js"></script>
+    <script src="libs/jquery.fancybox.js"></script>
+    <script src="libs/jquery.fancybox-thumbs.js"></script>
+    <script src="libs/owl.carousel-min.js"></script>
+
+    <!--jquery-->
+    <!-- angular -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-animate.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-route.js"></script>
+    <script src="libs/ui-bootstrap-tpls-0.13.0.js"></script>
+    <!-- //angular -->
+    <script src="js/storage.js?1.2"></script>
+  
+    <script src="js/image_loader.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mainjq.js"></script>
+
+
+
+    <script type="text/javascript">
+        angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+    </script>
+
+
+</head>
+
+<body ng-app="myapp" ng-controller="MainCtrl">
+    <div id="wrapper">
+      
+            <nav class="navbar navbar-default header" role="navigation">
+                <div class="container">
+                    <div class="top-tel pull-right">
+                        <span>Tel: 905 602 7077  Fax: 905 602 7577</span>
+
+                    </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand logo" href="#/"><img src="/images/logo.png" width="100%" alt="">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+
+
+
+                        <ul class=" nav navbar-nav pull-right">
+                            <li class="dropdown" ng-repeat="item in main_menu">
+                                <a class="dropdown-toggle" data-toggle="dropdown" ng-click="init_menu();item.active=true; consolef(item.submenu);" ng-class="{active: item.active}" href="{{item.href}}">{{item.name}}</a>
+                                <ul class="dropdown-menu dropdown-menu-cover" ng-if="item.submenu !== undefined">
+                                    <li ng-repeat="sub in item.submenu">
+                                        <a ng-click="init_menu();sub.active=false;" ng-class="{active: sub.active}" href="{{sub.href}}">{{sub.name}}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--//header-->
+            <div ng-view class="container-wrapper"></div>
+   
+
+            <footer class="site-footer">
+                <div class="row footer-top">
+                    <div class="container container-pad50">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 associations">
+                            <a href=""><img src="/images/bbb-logo.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5">
+                            <h4 class="uppercase">menu</h4>
+                            <ul class="bot-menu">
+                                <li ng-repeat="item in main_menu | filter:{bot_menu:true}">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" ng-click="init_menu();item.active=true; consolef(item.submenu);" ng-class="{active: item.active}" href="{{item.href}}">{{item.name}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5 container-pad20 operation-hours">
+                            <h5><span>Hours of Operation</span></h5>
+                            <p>Monday to Friday: 9am - 6pm</p>
+                            <p>Saturday: 10am - 4pm</p>
+                            <p>Sunday: By appointment only</p>
+                            <br>
+                             <h5><span>Showroom:</span></h5>
+                            <p>5151 Everest Dr. #1,</p>
+                            <p>Mississauga L4W 2Z3.</p>
+                            <p>Tel: 905 602 7077 </p>
+                            <p>Fax: 905 602 7577</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center social-media">
+                              <h4 class="uppercase">Social Media</h4>
+                              <div class="row">
+                                    <a href="https://www.facebook.com/TorontoGranite" target="_blank" class="fb"><img src="./images/svg/facebook.png" width="60px" alt="Facebook">
+                                    </a>
+                                    <a href="https://www.youtube.com/user/torontogranite" target="_blank" class="ytube"><img src="./images/svg/youtube.png" width="60px" alt="YouTube">
+                                    </a>
+                               </div>
+                               <div class="row ">     
+                                    <a href="https://twitter.com/toronto_granite" class="tw"><img src="./images/svg/twitter.png" target="_blank" width="60px" alt="Twitter">
+                                    </a>
+                                    <a href="http://www.houzz.com/pro/katedunde/torontogranitecom" class=""><img src="./images/svg/houzz.png" target="_blank" width="60px" alt="Twitter">
+                                    </a>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 map text-right">
+<!--                             <h4 class="uppercase">Our address</h4>
+                            <a href="https://www.google.com/maps/place/TorontoGranite.com/@43.6266972,-79.6352072,17z/data=!4m5!1m2!2m1!1sMississauga,+ON+L4W+5C5.+5151+Everest+Dr.+%231-3,!3m1!1s0x882b38a710024ea9:0xd90889e4c06abbb5" target="_blank"><img src="/images/map.jpg" style="width:80%;" class="container-pad20" alt=""></a> -->
+ 
+                          <iframe class="homestars-iframe" src="http://homestars.com/widgets/reviews/tempotech-ltd-torontogranite-com" height="250px" frameborder="0"></iframe>  
+                        </div>
+<!--                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 container-pad20 operation-hours">
+                                                      
+                            <h5><span>Showroom:</span></h5>
+                            <p>5151 Everest Dr. #1,</p>
+                            <p>Mississauga L4W 2Z3.</p>
+                            <br>
+                            <p>Tel: 905 602 7077 </p>
+                            <p>Fax: 905 602 7577</p>                            
+                        </div> -->
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12  text-center">
+                            <ul class="credit-card">
+                                <li>
+                                    <a href="">
+                                        <img src="./images/svg/paypal_logo.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="./images/svg/visa.svg" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href=""><img src="./images/svg/master_card.svg" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href=""><img src="./images/svg/american_express_card.svg" alt="">
+                                    </a>
+                                </li>
+                              <li>
+                                    <a href=""><img src="./images/svg/interac.png" alt="">
+                                    </a>
+                                </li>                                
+                            </ul>
+
+                        </div>
+                        <div class="social">
+                            
+
+
+                        </div>
+
+
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+                            <div class="copyright"> &copy; 2015 All Rights Reserved, TempoTech Ltd.
+                            </div>
+                        </div>
+
+
+                    </div>
+            </footer>
+ </div>
+</body>
+
+</html>

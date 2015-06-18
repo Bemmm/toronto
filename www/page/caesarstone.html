@@ -1,0 +1,181 @@
+<script>
+       initFancyBox();
+</script>
+<carousel interval="10000">
+    <slide ng-repeat="slide in slides" active="slide.active" style="max-height:800px; overflow:hidden;">
+        <img ng-src="{{slide.image}}" alt="">
+
+    </slide>
+
+</carousel>
+<div class="container container-pad50">
+<div class="row text-center container-pad20" style="padding-top:0;">
+	<h1><span>Caesarstone</span> countertops</h1>
+</div>
+<div class="row caesarstone-item" ng-repeat="item in caesarstone">
+<div class="row container-pad20">
+	<h2>{{item.name}}</h2>
+
+</div>
+	<div class="col-lg-2 caesarstone-img" ng-repeat="listitem in item.list">
+		<a href="{{listitem.image}}" rel="{{item.name}}" class="fancybox">
+			<img ng-src="{{listitem.thumbnail}}" alt="">
+		</a>
+	</div>
+
+</div>
+
+
+
+<!-- <div class="row">
+<div class="row container-pad20">
+	<h2>Shaded White</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneShadedWhite">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>
+
+
+<div class="row">
+<div class="row container-pad20">
+	<h2>Beige</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneBeige">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>
+
+
+
+
+
+<div class="row">
+<div class="row container-pad20">
+	<h2>Tan Brown</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneTanBrown">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>	
+
+
+
+
+
+<div class="row">
+<div class="row container-pad20">
+	<h2>Rich Brown</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneRichBrown">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>
+
+
+
+
+<div class="row">
+<div class="row container-pad20">
+	<h2>Bold Black</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneBoldBlack">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>
+
+
+
+<div class="row">
+<div class="row container-pad20">
+	<h2>Deep Gray</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneDeepGray">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>		
+
+
+
+
+
+<div class="row">
+<div class="row container-pad20">
+	<h2>Soft Gray</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneSoftGray">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>
+
+
+
+
+<div class="row">
+<div class="row container-pad20">
+	<h2>Vivid Green</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneVividGreen">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>
+
+
+<div class="row">
+<div class="row container-pad20">
+	<h2>Cool Blue</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneCoolBlue">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>
+
+
+
+<div class="row">
+<div class="row container-pad20">
+	<h2>Warm Red</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneWarmRed">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>
+
+
+
+
+<div class="row">
+<div class="row container-pad20">
+	<h2>Motivo</h2>
+</div>
+	<div class="col-lg-2" ng-repeat="item in caesarstoneMotivo">
+		<a href="">
+			<img ng-src="{{item.thumbnail}}" alt="">
+		</a>
+	</div>
+</div>		 -->			
+
+
+
+
+</div>

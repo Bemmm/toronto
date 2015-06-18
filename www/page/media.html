@@ -1,0 +1,32 @@
+
+<script>
+       initFancyBox();
+</script>
+<carousel interval="10000">
+    <slide ng-repeat="slide in slides" active="slide.active" style="max-height:800px; overflow:hidden;">
+        <img ng-src="{{slide.image}}" alt="">
+
+    </slide>
+
+</carousel>
+<div class="container container-pad50">
+<div class="" style="padding-bottom:20px;">
+    <div class="row text-center">
+        <h1><span>Media</span></h1>
+        <h2>Click on the picture below to zoom</h2>
+    </div>
+
+</div>
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 media-item">
+			<a class="fancybox" href="images/media/1.png">
+				<img src="images/media/1.png" alt="">
+			</a>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 media-item">
+			<a class="fancybox" href="images/media/2.jpg">
+				<img src="images/media/2.jpg" alt="">
+			</a>
+		</div>		
+	</div>
+</div>

@@ -1,0 +1,52 @@
+
+<carousel interval="10000">
+    <slide ng-repeat="slide in slides" active="slide.active" style="max-height:800px; overflow:hidden;">
+        <!--        <img ng-src="" style="margin:auto;">-->
+        <!--        <div class="container_directive" download-img="{{slide.image}} 100%*100% 1920*920"></div>-->
+        <img ng-src="{{slide.image}}" alt="">
+
+    </slide>
+
+</carousel>
+<div class="row">
+        <div class="row text-center container-pad20 "><h1><span>Granite</span> FAQ &apos;s</h1></div>
+    <div class="container ">
+            <div ng-controller="AccordionDemoCtrl">
+
+                  <accordion class="text-center faq-accordion"close-others="oneAtATime">
+                    <accordion-group class="accordion-item" heading="{{item.title}}"  ng-repeat="item in granite">
+                      {{item.content}}
+                    </accordion-group>
+
+                  </accordion>
+            </div>
+    </div>
+</div>
+<div class="row">
+        <div class="row text-center container-pad20 "><h1><span>CaesarSrtone</span> FAQ &apos;s</h1></div>
+    <div class="container ">
+            <div ng-controller="AccordionDemoCtrl">
+
+  <accordion class="text-center faq-accordion"close-others="oneAtATime">
+    <accordion-group class="accordion-item" heading="{{item.title}}" ng-repeat="item in caesarstone">
+      {{item.content}}
+    </accordion-group>
+
+  </accordion>
+</div>
+    </div>
+</div>
+<div class="row">
+        <div class="row text-center container-pad20 "><h1><span>Silestone</span> FAQ &apos;s</h1></div>
+    <div class="container ">
+            <div ng-controller="AccordionDemoCtrl">
+
+  <accordion class="text-center faq-accordion"close-others="oneAtATime">
+    <accordion-group class="accordion-item" heading="{{item.title}}" ng-repeat="item in silestone">
+      {{item.content}}
+    </accordion-group>
+
+  </accordion>
+</div>
+    </div>
+</div>

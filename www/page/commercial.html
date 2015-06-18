@@ -1,0 +1,19 @@
+
+<script>
+       initFancyBox();
+</script>
+<carousel interval="10000">
+    <slide ng-repeat="slide in slides" active="slide.active" style="max-height:800px; overflow:hidden;">
+        <img ng-src="{{slide.image}}" alt="">
+
+    </slide>
+
+</carousel>
+<div class="row">
+        <div class="row text-center container-pad20 "><h1><span>Commercial</span> Gallery</h1></div>
+    <div class="container">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin:10px 0; " ng-repeat="item in commercial">
+           <a href="{{item.href}}" rel="commercial"class="fancybox"><div width="100%" download-img="{{item.image}}"></div></a>
+        </div>
+    </div>
+</div>

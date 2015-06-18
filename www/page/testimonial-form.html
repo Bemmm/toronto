@@ -1,0 +1,48 @@
+<div class="testimonial-modal">
+    <div class="modal-header">
+        <h3 class="modal-title">Im a modal!</h3>
+    </div>
+    <div class="modal-body text-center">
+ <div class="form-group">
+  <label for="nme">Name:</label>
+  <input type="text" class="form-control" id="nme">
+</div>
+<div class="form-group">
+  <label for="eml">Password:</label>
+  <input type="email" class="form-control" id="eml">
+</div>
+<div id="uploader" ng-controller="uploaderCtrl" class="form-group">
+    <div class="row">
+        <div class="span6">
+            <div class="well">
+                <div>
+                    <div class="pull-left">
+                    <input type="file" id="file1" multiple/>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="btn_upload()">Upload</button>
+                        <button type="button" class="btn btn-danger btn-sm" ng-click="btn_clean()">Remove</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div ng-repeat="file in files" style="margin-top: 20px;border-bottom-color: antiquewhite;border-bottom-style: double;">
+                    <div><span>{{file.name}}</span><div style="float:right;"><span>{{file.humanSize}}</span><a ng-click="btn_remove(file)" title="Remove from list to be uploaded"><i class="icon-remove"></i></a></div>
+                    </div>
+                    <progress style="width:400px;" value="{{file.loaded}}" max="{{file.size}}"></progress>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="form-group">
+  <label for="fbk">Feedback:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>    
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-success" ng-click="ok()">Send</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+</div>

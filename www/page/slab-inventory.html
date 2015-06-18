@@ -1,0 +1,27 @@
+<script>
+       initFancyBox();
+</script>
+<carousel interval="10000">
+    <slide ng-repeat="slide in slides" active="slide.active" style="max-height:800px; overflow:hidden;">
+        <img ng-src="{{slide.image}}" alt="">
+    </slide>
+
+</carousel>
+<div class="row">
+    <div class="container container-pad50 slab text-center">
+        <h1><span>Slab</span> Inventory</h1>
+
+    </div>
+    <div class="row text-center">
+        <div class="container">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 slab-item"  ng-repeat="item in slab | limitTo: slablimit">
+                <div class="slab-img"><a href="{{item.image}}" rel="slab_froup"class="fancybox"><div download-img="{{item.image}}"></div></a></div>
+                <h4>{{item.title}}</h4>
+            </div>
+
+        </div>
+            <div class="container-pad50">
+                <button type="button" ng-click="slablimit = slablimit + 48;" ng-hide="slablimit>=slab.length;"  class="btn btn-default" aria-label="Left Align"><span>Load More</span></button>
+            </div>
+    </div>
+</div>

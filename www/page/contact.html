@@ -1,0 +1,54 @@
+<script>
+    initGoogleMap();
+</script>
+
+<div class="row">
+    <div id="map" style="width:100%; height:700px;">
+
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <div contact-form=""><div ng-controller="ContactController" class=" container-pad50 contact-form-bottom ng-scope">
+    <div class="col-md-3 address">
+        <address>
+                    <h5>Address:</h5>
+                    <p>5151 Everest Dr. #1,</p>
+                    <p>Mississauga L4W 2Z3.</p>
+                    <h5>Phone:</h5>
+                    <p>905 602 7077</p>
+                    <h5>Fax:</h5>
+                    <p>905 602 7577</p>
+                </address>
+    </div>
+    <form ng-submit="submit(contactform)" name="contactform" method="post" action="" role="form" class="ng-pristine ng-invalid ng-invalid-required ng-valid-email">
+        <div class="col-md-4 contact-form" ng-class="{ 'has-error': contactform.inputName.$invalid &amp;&amp; submitted }">
+            <div class="contact-form-row" ng-class="{ 'has-error': contactform.inputName.$invalid &amp;&amp; submitted }">
+                <div>
+                    <span>Name</span>
+                    <input ng-model="formData.inputName" type="text" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" id="inputName" name="inputName" placeholder="Your Name" required="">
+                </div>
+                <div>
+                    <span>Email</span>
+                    <input ng-model="formData.inputEmail" type="email" class="form-control ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required" id="inputEmail" name="inputEmail" placeholder="Your Email" required="">
+                </div>
+                <div>
+                    <span>Phone</span>
+                    <input ng-model="formData.inputSubject" type="phone" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" id="inputSubject" name="inputSubject" placeholder="Yor Phone" required="">
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="col-md-4 contact-form-row comments">
+            <div>
+                <span>Comments</span>
+                <textarea ng-model="formData.inputMessage" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..." required=""></textarea>
+                <input ng-disabled="submitButtonDisabled" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+    <div class="clearfix"></div>
+</div>
+</div>
+    </div>
+</div>

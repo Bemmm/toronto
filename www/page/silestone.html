@@ -1,0 +1,60 @@
+<script>
+       initFancyBox();
+</script>
+<carousel interval="10000">
+    <slide ng-repeat="slide in slides" active="slide.active" style="max-height:800px; overflow:hidden;">
+        <img ng-src="{{slide.image}}" alt="">
+
+    </slide>
+
+</carousel>
+<div class="container container-pad50">
+<div class="row text-center">
+
+	<h1><span>Silestone</span></h1>
+<div class="text-left">	
+	<h4>he genius of <b>Silestone Quartz</b> is its ability to reinvent itself. With products that stay at the forefront of innovation and designs that are constantly refined to meet your changing needs and interests, Silestone offers you an almost endless palette of possibilities. Utilizing a revolutionary process, Silestone offers you over 60 colors, exceptional textures and variety of finishes.</h4>
+	<br>
+	<h4>Multi-dimensional functionality makes <b>Silestone Quartz</b> a cleaner, safer surface for your home. Silestone offers the unique combination of built-in Microban antimicrobial product protection, National Sanitation Foundation certification and GREENGUARD Indoor Air Quality Certification.</h4>
+	<br>
+	<h4>Microban protection inhibits the growth of microbes such as odor-causing bacteria, mold and mildew. While Microban protection does not protect users from foodborne illness and is not a substitute for normal cleaning practices, it does result in countertops that are easier to clean and stay clean.</h4>
+	<br>
+	<h4><b>Silestone</b> offers virtually unlimited possibilities in terms of applications. Ideally suited for kitchen countertops, <b>Silestone</b> is also excellent for bathroom vanity tops, table tops, floors and even shelving. Continue to reinvent spaces with <b>Silestone Quartz.</b></h4>
+	<br>
+	</div>
+</div>
+	<div class="row container-pad20" ng-repeat="groupname in silestone">
+
+	<h2 style="padding-bottom:20px;">{{groupname.group}}</h2>
+
+		<div class="silestone-item col-lg-2 " ng-repeat="item in groupname.photos">
+			<div class="silestone-img">
+				<a href="{{item.main}}" class="fancybox" rel="{{groupname.group}}">
+					<img ng-src="{{item.prev}}" alt="">
+
+				
+				<div class="silestone-info">
+					
+						<div ng-class="{hand:item.hand}"></div>
+						<div ng-class="{bubbles:item.bubbles}"></div>
+
+				</div>
+				</a>
+			</div>	
+		<h4 class="text-center" style="padding-top:10px; color:#000;">{{item.title}}</h4>
+
+		</div>
+	</div>
+	<div class="row" >
+		<h5 style="color:red;">
+
+*All colors are subject to variations in shade and particulate structure. Colors seen on a computer monitor will differ slightly from the actual stone color.
+</h5>
+<h5 style="color:red;">
+For a true colour representation visit our showroom.
+</h5>
+<h5 style="color:red;">
+For more information, please visit <a href="http://www.silestoneusa.com" style="color:blue">www.silestoneusa.com</a>
+</h5 style="color:red;">
+	</div>
+</div>

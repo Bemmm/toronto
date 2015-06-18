@@ -1,0 +1,119 @@
+<div id="wrapper" >
+   <carousel interval="10000">
+    <slide ng-repeat="slide in slides" active="slide.active">
+        <!--        <img ng-src="" style="margin:auto;">-->
+        <!--        <div class="container_directive" download-img="{{slide.image}} 100%*100% 1920*920"></div>-->
+        <img ng-src="{{slide.image}}" alt="">
+
+    </slide>
+    <div class="slider-tittle">
+        <div class="container">
+            <div class="slider-description col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <h3><span>We Offer: </span>Fine Granite Countertops</h3>
+                <h2 class="uppercase">FROM $40 PER Sq. Ft</h2>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="get-free-button "><a href="">Get Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</carousel>
+<!--//carousel-->
+
+<div class="row inset-shadow container-pad50 bg-grey">
+        <div class="container text-center">
+            <div class="col-lg-12">
+                <h1>Toronto<span style="font-family:'Titling';">Granite.com</span></h1>
+                <h4 class="container-pad20">TorontoGranite.com provides a complete project service from design, slab selection, fabrication, and installation to maintenance of your stone projects. We have an excellent reputation in the Greater Toronto Area for our exceptional customer service and rapid delivery of quality stone products at affordable prices.</h4>
+            </div>
+        </div>
+   
+    <div class="row ">
+        <div class="container">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="wrap-img">
+                        <img src="/images/1.jpg" alt="">
+                    </div>
+                    <div class="text-center service-description container-pad20">
+                        <h3><span>Slab Gallery</span></h3>
+                        <h5>TorontoGranite.com is your one-stop shop for luxury stone surface applications featuring granite, Caesarstone, Silestone, and Diamastone quartz , marble, and glass materials to suit all of your needs</h5>
+                    </div>
+                        <div class="service-find-button transparent-button"><a href="#/slab-inventory">Find Out More</a>
+                        </div>                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="wrap-img">
+                        <img src="/images/2.jpg" alt="">
+                    </div>
+                    <div class="text-center service-description container-pad20">
+                        <h3><span>3D Digital Templating</span></h3>
+                        <h5>The Proliner® 3D Digital Template System, is a state-of-the-art, portable, digital measuring device that streamlines construction templating and layout tasks.</h5>
+                    </div>
+                        <div class="service-find-button transparent-button"><a href="#/digital">Find Out More</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="wrap-img">
+                        <img src="/images/3.jpg" alt="">
+                    </div>
+                    <div class="text-center service-description container-pad20">
+                        <h3><span>Waterjet Cutting</span></h3>
+                        <h5>Waterjet is the fastest growing machine tool process in the world. It cuts without heat and leaves a clean edge, eliminating the need for secondary finishing</h5>
+                    </div>
+                        <div class="service-find-button transparent-button"><a href="#/waterjet-cutting">Find Out More</a>
+                        </div>
+            
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="row testimonial container-pad50" >
+        <div class="container containr-pad20" ng-controller="ModalDemoCtrl">
+        <div class="text-center"><h1><span>Testimonials</span></h1></div>
+        <carousel interval="5000">
+          <slide ng-repeat="item in testimonials | limitTo:3" active="slide.active">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+               <div class="testimonial-img">
+                    <a href="#/testimonials"><img style="width:auto; height:100%;" ng-src="{{item.image}}" alt=""/></a>
+               </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 container-pad50">
+                <h2 class="text-left">{{item.customer}}</h2>
+                <h4 class="text-left">{{item.feedback}}...<a href="#/testimonials" class="read-more">Read more</a> </h4>
+                <div class="transparent-button testimonial-button" ng-click="open()"><a href="" >Send Us a Testimonial</a></div>
+            </div>
+        </slide>
+        </carousel>
+        </div>
+    </div>
+
+<!--     <div class="row  homestars-winner text-center">
+        <div class="container container-pad50">
+                <h1>Homestars</h1>
+                <h3>Have a look at our customers <span>reviews</span>:</h3>
+                <div class="row container-pad50" style="padding-bottom:0;">
+                    <div class="col-lg-4 col-md-4 col-sm-4 cols-xs-12"><a href="http://homestars.com/companies/318616-tempotech-ltd-torontogranite-com"><img src="/images/homestars/winner08.png" alt=""></a></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 cols-xs-12"><a href="http://homestars.com/companies/318616-tempotech-ltd-torontogranite-com"><img src="/images/homestars/winner09.png" alt=""></a></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 cols-xs-12"><a href="http://homestars.com/companies/318616-tempotech-ltd-torontogranite-com"><img src="/images/homestars/winner11.png" alt=""></a></div>
+                </div>
+
+        </div>
+    </div> -->
+        <div class="row bg-grey inset-shadow suppliers text-center container-pad20" style="padding-bottom:0;">
+    <h1><span>Suppliers</span></h1>
+            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12" ng-repeat="supplier in suppliers">
+                <a href="{{supplier.href}}" target="_blank"><img ng-src="{{supplier.image}}" alt=""></a>
+            </div>    
+                                   
+    </div>
+</div>
+
+

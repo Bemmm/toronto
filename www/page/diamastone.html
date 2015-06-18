@@ -1,0 +1,75 @@
+
+<script>
+       initFancyBox();
+</script>
+<carousel interval="10000">
+    <slide ng-repeat="slide in slides" active="slide.active" style="max-height:800px; overflow:hidden;">
+        <img ng-src="{{slide.image}}" alt="">
+
+    </slide>
+
+</carousel>
+<div class="container container-pad50">
+<div class="" style="padding-bottom:20px;">
+    <div class="row text-center">
+        <h1><span>Engineered Diamastone</span></h1>
+        
+    </div>
+
+</div>
+	<div class="container">
+		<h4>
+			<b>Diamastone</b> is an engineered stone, with high quartz content, sometimes blended with other natural products, such as sand, glass, crushed granite and other stones, to obtain different design effects. All materials are bound together with a small percentage of polyester resins under high pressure and vibration in a vacuum environment. Through this process, which resembles the way nature itself created the hard natural stones, we obtain a material with extremely high physical-mechanical properties and with superior performance values.
+		</h4>
+		<br>
+		<h4>
+			<b>Diamastone</b> is produced in a range of colors carefully selected to allow customers, Designers and Architects highly creative designs in kitchen and bath counters, or in commercial applications such as restaurant and hotel bar and food counters, laboratory surfaces, tables and furniture, as well as interior wall and floor coverings.
+		</h4>
+		<br>
+		<h4>Because <b>Diamastone</b> offers such exceptional durability and performance, it is considered highly suitable for high traffic floors. Architects and Designers frequently specify this material for shopping centers, airport flooring, hospital flooring, lobbies, hotel applications, where the savings in cleaning and maintenance strongly outweigh the initial investment.</h4>
+		<br>
+		<h4>
+			It is in private homes where <b>Diamastone</b> can yield spectacular results. Its high-end color and texture designs, and its incredible physical characteristics will allow the creation of kitchen and bathroom surfaces that are impervious to the attack of cleaners, most acids, and the worst enemies of natural stone that being grease, oil, lemon, wine, vinegar and sauces. The non-porous surface of Diamastone will not allow the penetration of liquids, a characteristic that will also not allow the growth of bacteria or the penetration of dirt, thus making it one of the cleanest surfaces you can possibly have.
+		</h4>
+<div ng-controller="TabsDemoCtrl" class="container-pad20">
+  <tabset justified="true" class="inventory-tabs">
+    <tab heading="Desert">
+    	    <div class="row text-center">
+        <div class="container container-pad20">
+            <div class="col-lg-2 col-md-1 col-sm-6 col-xs-12 diamastone-item"  ng-repeat="item in desert">
+                <div class="diamastone-img"><a href="" rel="desert_group" class=""><div download-img="{{item.image}}"></div></a></div>
+                <h5>ASdasdasd</h5>
+            </div>
+
+        </div>
+    </div>
+    </tab>
+
+
+
+
+
+
+
+
+
+
+    <tab heading="Primary">
+    	<div class="row">
+    <div class="container">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin:10px 0; " ng-repeat="item in residental | limitTo: residentalLimit">
+           <a href="{{item.href}}" rel="commercial"class="fancybox"><div width="100%" download-img="{{item.image}}"></div></a>
+        </div>
+    </div>
+            <div class="container-pad50 text-center">
+                <button type="button" ng-click="residentalLimit = residentalLimit + 16;" ng-hide="residentalLimit>=residental.length;" class="btn btn-default" aria-label="Left Align"><span>Load More</span></button>
+            </div>    
+</div>
+    </tab>
+    <tab heading="Contemporary">Long Labeled Justified content</tab>
+    <tab heading="Boutique">Long Labeled Justified content</tab>
+  </tabset>
+
+</div>		
+	</div>
+</div>

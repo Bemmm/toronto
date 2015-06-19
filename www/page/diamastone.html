@@ -33,41 +33,17 @@
 		</h4>
 <div ng-controller="TabsDemoCtrl" class="container-pad20">
   <tabset justified="true" class="inventory-tabs">
-    <tab heading="Desert">
-    	    <div class="row text-center">
-        <div class="container container-pad20">
-            <div class="col-lg-2 col-md-1 col-sm-6 col-xs-12 diamastone-item"  ng-repeat="item in desert">
-                <div class="diamastone-img"><a href="" rel="desert_group" class=""><div download-img="{{item.image}}"></div></a></div>
-                <h5>ASdasdasd</h5>
+    <tab ng-repeat="items in diamastone" heading="{{items.group}}">
+        <div class="row text-center">
+            <div class="container container-pad20" ng-repeat="item in items">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 diamastone-item" ng-repeat="photos in item">
+                    <div class="diamastone-img"><a href="{{photos}}" rel="{{item.group}}" class="fancybox"><div download-img="{{photos}}" style="width:100%">{{photos}}</div></a></div>
+                </div>
+
             </div>
-
         </div>
-    </div>
     </tab>
 
-
-
-
-
-
-
-
-
-
-    <tab heading="Primary">
-    	<div class="row">
-    <div class="container">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin:10px 0; " ng-repeat="item in residental | limitTo: residentalLimit">
-           <a href="{{item.href}}" rel="commercial"class="fancybox"><div width="100%" download-img="{{item.image}}"></div></a>
-        </div>
-    </div>
-            <div class="container-pad50 text-center">
-                <button type="button" ng-click="residentalLimit = residentalLimit + 16;" ng-hide="residentalLimit>=residental.length;" class="btn btn-default" aria-label="Left Align"><span>Load More</span></button>
-            </div>    
-</div>
-    </tab>
-    <tab heading="Contemporary">Long Labeled Justified content</tab>
-    <tab heading="Boutique">Long Labeled Justified content</tab>
   </tabset>
 
 </div>		

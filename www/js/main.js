@@ -266,7 +266,8 @@ $scope.silestone = [
         $scope.desert = storage.getDesert();    
         $scope.caesarstone = storage.getCaesarstone();
         $scope.silestone = storage.getSilestone();
-        $scope.belenco = storage.getBelenco();        
+        $scope.belenco = storage.getBelenco();
+        $scope.diamastone = storage.getDiamastone();        
         console.log($scope.silestone);                                                                                                                                                                           
         $scope.init_menu = function () {
             angular.forEach(this.main_menu, function (value, key) {

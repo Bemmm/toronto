@@ -466,8 +466,7 @@ ul.dropdown-menu-cover {
     border-top-right-radius: none!important;
 }
 
-.carousel-indicators,
-.carousel-control {
+.carousel-indicators{
     z-index: 3 !important;
 }
 .carousel-indicators{
@@ -550,7 +549,7 @@ ul.dropdown-menu-cover {
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 5px 0;
-    z-index: 4;
+
 }
 
 .carousel-inner .slider-tittle .slider-description {
@@ -570,6 +569,8 @@ h3 {
 
 .carousel-inner .slider-tittle .get-free-button {
     width: auto;
+    z-index: 4;
+    position: relative;
     padding: 0;
     margin-top: 10px;
     float: right;
@@ -1055,6 +1056,9 @@ box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.3);
     margin: auto;
     overflow: hidden;
 }
+.diamastone-img a img{
+    width: 100%;
+}
 @media screen and (min-width: 319px) and (max-width: 1000px) {
 /*    .gallery-item{
         margin-top: 20px;
@@ -1077,6 +1081,13 @@ box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.3);
     .nav li a {
         font-size: 14px;
     }
+    .slider-description{
+        display:none;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 319px) and (max-width: 458px) {
@@ -1093,18 +1104,79 @@ box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.3);
 .carousel-inner .slider-tittle .get-free-button a {
         font-size: 16px;
     }
+    .social-media{
+        padding-top: 20px;
+    }
+    .operation-hours{
+        text-align: center;
+    }
+
     
 }
 @media screen and (min-width: 319px) and (max-width: 767px) {
     .top-tel {
         display: none;
     }
-         .map {
-         padding-top: 20px;
+    #map{
+        height: 300px !important;
+    }
+        .operation-hours{
+        text-align: center;
+    }
+    .container-wrapper{
+        margin-top: -20px;
+    }
+    .header{
+        background-color: #000;
+    }
+    .nav > li > ul{
+        background-color: #fff;
+    }
+    .nav > li > ul {
+        padding-left: 40px; 
+    }
+    .nav > li, .nav > li > ul > li {
+        border-bottom: 1px solid #303030;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: #E7E7E7;
+        background-color: black;
+    }
+    .header{
+        position: relative;
+    }
+    .dropdown-menu-cover li {
+        background-color: #1D1D1D;
+    }
+    .dropdown-menu{
+        max-width: 100% !important;
+        position: relative;
+        float: none;
+        z-index: 5 !important;
+        padding: 0;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #FF7E00;
+}
+    .map {
+        padding-top: 20px;
      }
     .map a img{
         width: 60%;
     }
+    body h1{
+        font-size: 25px;
+    }
+    .service-find-button{
+        margin-top: 30px;
+    }
+    .slider-description{
+        display:none;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+
 /*    .social{
         position: relative;
         text-align: center;

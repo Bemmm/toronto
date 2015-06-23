@@ -5,201 +5,487 @@
      var diamastone = [
    {
       group:"Boutique",
-      photos:[
-         "images/diamastone_images/boutique/01-lg-3.jpg",
-         "images/diamastone_images/boutique/04-lg-3.jpg",
-         "images/diamastone_images/boutique/05-lg-3.jpg",
-         "images/diamastone_images/boutique/06-lg-3.jpg",
-         "images/diamastone_images/boutique/08-lg-3.jpg",
-         "images/diamastone_images/boutique/09-lg-3.jpg",
-         "images/diamastone_images/boutique/11-lg-3.jpg",
-         "images/diamastone_images/boutique/12-lg-3.jpg",
-         "images/diamastone_images/boutique/images/diamastone_images/boutique/13-lg-3.jpg",
-         "images/diamastone_images/boutique/14-lg-2.jpg",
-         "images/diamastone_images/boutique/15-lg-2.jpg",
-         "images/diamastone_images/boutique/16-lg-2.jpg",
-         "images/diamastone_images/boutique/17-lg-2.jpg",
-         "images/diamastone_images/boutique/18-lg-2.jpg",
-         "images/diamastone_images/boutique/19-lg-2.jpg",
-         "images/diamastone_images/boutique/20-lg-2.jpg",
-         "images/diamastone_images/boutique/21-lg-2.jpg",
-         "images/diamastone_images/boutique/22-lg-2.jpg",
-         "images/diamastone_images/boutique/23-lg-2.jpg",
-         "images/diamastone_images/boutique/24-lg-2.jpg",
-         "images/diamastone_images/boutique/24_2lg-1.jpg",
-         "images/diamastone_images/boutique/25-lg-1.jpg",
-         "images/diamastone_images/boutique/26-lg-1.jpg",
-         "images/diamastone_images/boutique/26_2lg.jpg",
-         "images/diamastone_images/boutique/27-lg-1.jpg",
-         "images/diamastone_images/boutique/28-lg-1.jpg",
-         "images/diamastone_images/boutique/32-lg-1.jpg",
-         "images/diamastone_images/boutique/33-lg-1.jpg",
-         "images/diamastone_images/boutique/34-lg-1.jpg",
-         "images/diamastone_images/boutique/39-lg-1.jpg",
-         "images/diamastone_images/boutique/40-lg-1.jpg",
-         "images/diamastone_images/boutique/42-lg-1.jpg",
-         "images/diamastone_images/boutique/43-lg-1.jpg",
-         "images/diamastone_images/boutique/44-lg-1.jpg",
-         "images/diamastone_images/boutique/46-lg-1.jpg",
-         "images/diamastone_images/boutique/47-lg-1.jpg",
-         "images/diamastone_images/boutique/48-lg-1.jpg",
-         "images/diamastone_images/boutique/49-lg-1.jpg",
-         "images/diamastone_images/boutique/50-lg-1.jpg",
-         "images/diamastone_images/boutique/51-lg-1.jpg",
-         "images/diamastone_images/boutique/52-lg-1.jpg",
-         "images/diamastone_images/boutique/53-lg-1.jpg",
-         "images/diamastone_images/boutique/54-lg-1.jpg",
-         "images/diamastone_images/boutique/55-lg-1.jpg",
-         "images/diamastone_images/boutique/57-lg-1.jpg",
-         "images/diamastone_images/boutique/58-lg.jpg",
-         "images/diamastone_images/boutique/59-lg.jpg",
-         "images/diamastone_images/boutique/Amazon_521_lg.jpg",
-         "images/diamastone_images/boutique/Atlas_Beige_821_lg.jpg",
-         "images/diamastone_images/boutique/Atlas_Brown_820_lg.jpg",
-         "images/diamastone_images/boutique/Bordeaux_520_lg.jpg",
-         "images/diamastone_images/boutique/Brick_518_lg.jpg",
-         "images/diamastone_images/boutique/Caldera_Brown_807_lg.jpg",
-         "images/diamastone_images/boutique/Caldera_Grey_808_lg.jpg",
-         "images/diamastone_images/boutique/Caldera_White_809_lg.jpg",
-         "images/diamastone_images/boutique/Flamingo_514_lg.jpg",
-         "images/diamastone_images/boutique/Gemstone_516_lg.jpg",
-         "images/diamastone_images/boutique/Ice_511_lg.jpg",
-         "images/diamastone_images/boutique/Jet_Black_512_lg.jpg",
-         "images/diamastone_images/boutique/Lagoon_513_lg.jpg",
-         "images/diamastone_images/boutique/Lavender_515_lg.jpg",
-         "images/diamastone_images/boutique/Lead_Grey_272_lg.jpg",
-         "images/diamastone_images/boutique/Lime_517_lg.jpg",
-         "images/diamastone_images/boutique/Nickel_271_lg.jpg",
-         "images/diamastone_images/boutique/Pebble_Green_267_lg.jpg",
-         "images/diamastone_images/boutique/Ruby_Mirage_411_lg.jpg",
-         "images/diamastone_images/boutique/Silver_Blue_904_lg.jpg",
-         "images/diamastone_images/boutique/Violet_510_lg.jpg"
-      ]
-   },
-   {
+      photos:[{
+         photo:"images/diamastone_images/boutique/01-lg-3.jpg",
+         title:"Abalone"
+    },{
+         photo:"images/diamastone_images/boutique/04-lg-3.jpg",
+         title:"Baja"
+    },{
+         photo:"images/diamastone_images/boutique/05-lg-3.jpg",
+         title:"Beige Mirage"
+    },{
+         photo:"images/diamastone_images/boutique/06-lg-3.jpg",
+         title:"Black Mirage"
+    },{
+         photo:"images/diamastone_images/boutique/08-lg-3.jpg",
+         title:"Blond"
+    },{
+         photo:"images/diamastone_images/boutique/09-lg-3.jpg",
+         title:"Blue Mirage"
+    },{
+         photo:"images/diamastone_images/boutique/11-lg-3.jpg",
+         title:"Carbon"
+    },{
+         photo:"images/diamastone_images/boutique/12-lg-3.jpg",
+         title:"Cobalt"
+    },{
+         photo:"images/diamastone_images/boutique/13-lg-3.jpg",
+         title:"Coffee"
+    },{
+         photo:"images/diamastone_images/boutique/14-lg-2.jpg",
+         title:"Cream"
+    },{
+         photo:"images/diamastone_images/boutique/15-lg-2.jpg",
+         title:"D. Ice Sparkle"
+    },{
+         photo:"images/diamastone_images/boutique/16-lg-2.jpg",
+         title:"Doeskin"
+    },{
+         photo:"images/diamastone_images/boutique/17-lg-2.jpg",
+         title:"Fawn"
+    },{
+         photo:"images/diamastone_images/boutique/18-lg-2.jpg",
+         title:"Flame"
+    },{
+         photo:"images/diamastone_images/boutique/19-lg-2.jpg",
+         title:"Grey Abalone"
+    },{
+         photo:"images/diamastone_images/boutique/20-lg-2.jpg",
+         title:"Lava Beige"
+    },{
+         photo:"images/diamastone_images/boutique/21-lg-2.jpg",
+         title:"Lava Black"
+    },{
+         photo:"images/diamastone_images/boutique/22-lg-2.jpg",
+         title:"Lava Brown"
+    },{
+         photo:"images/diamastone_images/boutique/23-lg-2.jpg",
+         title:"Lava Cream"
+    },{
+         photo:"images/diamastone_images/boutique/24-lg-2.jpg",
+         title:"Lava Grey"
+    },{
+         photo:"images/diamastone_images/boutique/24_2lg-1.jpg",
+         title:"Lava Green"
+    },{
+         photo:"images/diamastone_images/boutique/25-lg-1.jpg",
+         title:"Lava Salsa"
+    },{
+         photo:"images/diamastone_images/boutique/26-lg-1.jpg",
+         title:"Mahogany Mirage"
+    },{
+         photo:"images/diamastone_images/boutique/26_2lg.jpg",
+         title:"Mahogany"
+    },{
+         photo:"images/diamastone_images/boutique/27-lg-1.jpg",
+         title:"Negro Diamante"
+    },{
+         photo:"images/diamastone_images/boutique/28-lg-1.jpg",
+         title:"Night Sparkle"
+    },{
+         photo:"images/diamastone_images/boutique/32-lg-1.jpg",
+         title:"Perlino"
+    },{
+         photo:"images/diamastone_images/boutique/33-lg-1.jpg",
+         title:"Platinum"
+    },{
+         photo:"images/diamastone_images/boutique/34-lg-1.jpg",
+         title:"Plum Mirage"
+    },{
+         photo:"images/diamastone_images/boutique/39-lg-1.jpg",
+         title:"Saginaw"
+    },{
+         photo:"images/diamastone_images/boutique/40-lg-1.jpg",
+         title:"Sienna"
+    },{
+         photo:"images/diamastone_images/boutique/42-lg-1.jpg",
+         title:"Satin Doeskin"
+    },{
+         photo:"images/diamastone_images/boutique/43-lg-1.jpg",
+         title:"Satin Fawn"
+    },{
+         photo:"images/diamastone_images/boutique/44-lg-1.jpg",
+         title:"Satin Negro"
+    },{
+         photo:"images/diamastone_images/boutique/46-lg-1.jpg",
+         title:"Silver Ash"
+    },{
+         photo:"images/diamastone_images/boutique/47-lg-1.jpg",
+         title:"Silver Black"
+    },{
+         photo:"images/diamastone_images/boutique/48-lg-1.jpg",
+         title:"Silver Steel"
+    },{
+         photo:"images/diamastone_images/boutique/49-lg-1.jpg",
+         title:"Silver White"
+    },{
+         photo:"images/diamastone_images/boutique/50-lg-1.jpg",
+         title:"Sky Sparkle"
+    },{
+         photo:"images/diamastone_images/boutique/51-lg-1.jpg",
+         title:"Spumoni"
+    },{
+         photo:"images/diamastone_images/boutique/52-lg-1.jpg",
+         title:"Star Cream"
+    },{
+         photo:"images/diamastone_images/boutique/53-lg-1.jpg",
+         title:"Star White"
+    },{         
+         photo:"images/diamastone_images/boutique/54-lg-1.jpg",
+         title:"Thunder"
+    },{         
+         photo:"images/diamastone_images/boutique/57-lg-1.jpg",
+         title:"White Lightning"
+    },{         
+         photo:"images/diamastone_images/boutique/58-lg.jpg",
+         title:"White Mirage"
+    },{         
+         photo:"images/diamastone_images/boutique/59-lg.jpg",
+         title:"White Sparkle"
+    },{         
+         photo:"images/diamastone_images/boutique/Amazon_521_lg.jpg",
+         title:"Amazon"
+    },{         
+         photo:"images/diamastone_images/boutique/Atlas_Beige_821_lg.jpg",
+         title:"Atlas Beige"
+    },{         
+         photo:"images/diamastone_images/boutique/Atlas_Brown_820_lg.jpg",
+         title:"Atlas Brown"
+    },{         
+         photo:"images/diamastone_images/boutique/Bordeaux_520_lg.jpg",
+         title:"Bordeaux"
+    },{         
+         photo:"images/diamastone_images/boutique/Brick_518_lg.jpg",
+         title:"Brick"
+    },{         
+         photo:"images/diamastone_images/boutique/Caldera_Brown_807_lg.jpg",
+         title:"Caldera Brown"
+    },{         
+         photo:"images/diamastone_images/boutique/Caldera_Grey_808_lg.jpg",
+         title:"Caldera Grey"
+    },{         
+         photo:"images/diamastone_images/boutique/Caldera_White_809_lg.jpg",
+         title:"Caldera White"
+    },{         
+         photo:"images/diamastone_images/boutique/Flamingo_514_lg.jpg",
+         title:"Flamingo"
+    },{         
+         photo:"images/diamastone_images/boutique/Gemstone_516_lg.jpg",
+         title:"Gemstone"
+    },{         
+         photo:"images/diamastone_images/boutique/Ice_511_lg.jpg",
+         title:"Ice"
+    },{         
+         photo:"images/diamastone_images/boutique/Jet_Black_512_lg.jpg",
+         title:"Jet Black"
+    },{         
+         photo:"images/diamastone_images/boutique/Lagoon_513_lg.jpg",
+         title:"Lagoon"
+    },{         
+         photo:"images/diamastone_images/boutique/Lavender_515_lg.jpg",
+         title:"Lavender"
+    },{         
+         photo:"images/diamastone_images/boutique/Lead_Grey_272_lg.jpg",
+         title:"Lead Grey"
+    },{         
+         photo:"images/diamastone_images/boutique/Lime_517_lg.jpg",
+         title:"Lime"
+    },{         
+         photo:"images/diamastone_images/boutique/Nickel_271_lg.jpg",
+         title:"Nickel"
+    },{         
+         photo:"images/diamastone_images/boutique/Pebble_Green_267_lg.jpg",
+         title:"Pebble Green"
+    },{            
+         photo:"images/diamastone_images/boutique/Ruby_Mirage_411_lg.jpg",
+         title:"Ruby Mirage"
+    },{            
+         photo:"images/diamastone_images/boutique/Silver_Blue_904_lg.jpg",
+         title:"Silver Blue"
+    },{            
+         photo:"images/diamastone_images/boutique/Violet_510_lg.jpg",
+         title:"Violet"
+    }
+  ]
+},
+{
       group:"Contemporary",
-      photos:[
-         "images/diamastone_images/contemporary/08_2lg.jpg",
-         "images/diamastone_images/contemporary/08_3lg.jpg",
-         "images/diamastone_images/contemporary/12_3lg.jpg",
-         "images/diamastone_images/contemporary/16_2lg.jpg",
-         "images/diamastone_images/contemporary/18_2lg.jpg",
-         "images/diamastone_images/contemporary/18_3lg.jpg",
-         "images/diamastone_images/contemporary/25-lg.jpg",
-         "images/diamastone_images/contemporary/26-lg.jpg",
-         "images/diamastone_images/contemporary/27-lg.jpg",
-         "images/diamastone_images/contemporary/28-lg.jpg",
-         "images/diamastone_images/contemporary/29-lg.jpg",
-         "images/diamastone_images/contemporary/30-lg.jpg",
-         "images/diamastone_images/contemporary/31-lg.jpg",
-         "images/diamastone_images/contemporary/32-lg.jpg",
-         "images/diamastone_images/contemporary/33-lg.jpg",
-         "images/diamastone_images/contemporary/34-lg.jpg",
-         "images/diamastone_images/contemporary/34_2lg.jpg",
-         "images/diamastone_images/contemporary/35-lg.jpg",
-         "images/diamastone_images/contemporary/36-lg.jpg",
-         "images/diamastone_images/contemporary/37-lg.jpg",
-         "images/diamastone_images/contemporary/38-lg.jpg",
-         "images/diamastone_images/contemporary/40-lg.jpg",
-         "images/diamastone_images/contemporary/41-lg.jpg",
-         "images/diamastone_images/contemporary/42-lg.jpg",
-         "images/diamastone_images/contemporary/43-lg.jpg",
-         "images/diamastone_images/contemporary/44-lg.jpg",
-         "images/diamastone_images/contemporary/45-lg.jpg",
-         "images/diamastone_images/contemporary/46-lg.jpg",
-         "images/diamastone_images/contemporary/47-lg.jpg",
-         "images/diamastone_images/contemporary/48-lg.jpg",
-         "images/diamastone_images/contemporary/49-lg.jpg",
-         "images/diamastone_images/contemporary/50-lg.jpg",
-         "images/diamastone_images/contemporary/51-lg.jpg",
-         "images/diamastone_images/contemporary/52-lg.jpg",
-         "images/diamastone_images/contemporary/53-lg.jpg",
-         "images/diamastone_images/contemporary/54-lg.jpg",
-         "images/diamastone_images/contemporary/55-lg.jpg",
-         "images/diamastone_images/contemporary/56-lg.jpg",
-         "images/diamastone_images/contemporary/57-lg.jpg",
-         "images/diamastone_images/contemporary/57_2lg.jpg",
-         "images/diamastone_images/contemporary/57_3lg.jpg"
-      ]
+      photos:[{
+         photo:"images/diamastone_images/contemporary/08_2lg.jpg",
+         title:"Candida Beige"
+        },{   
+         photo:"images/diamastone_images/contemporary/08_3lg.jpg",
+         title:"Chestnut"
+        },{   
+         photo:"images/diamastone_images/contemporary/12_3lg.jpg",
+         title:"Cristal Brown"
+        },{   
+         photo:"images/diamastone_images/contemporary/16_2lg.jpg",
+         title:"Eggplant"
+        },{   
+         photo:"images/diamastone_images/contemporary/18_2lg.jpg",
+         title:"Grey Dust"
+        },{   
+         photo:"images/diamastone_images/contemporary/25-lg.jpg",
+         title:"Luce Fresca"
+        },{   
+         photo:"images/diamastone_images/contemporary/26-lg.jpg",
+         title:"Luce Laguna"
+        },{   
+         photo:"images/diamastone_images/contemporary/29-lg.jpg",
+         title:"Luce Marquis"
+        },{   
+         photo:"images/diamastone_images/contemporary/30-lg.jpg",
+         title:"Luce Noce"
+        },{   
+         photo:"images/diamastone_images/contemporary/31-lg.jpg",
+         title:"Luce Oceano"
+        },{   
+         photo:"images/diamastone_images/contemporary/32-lg.jpg",
+         title:"Luce Oro"
+        },{   
+         photo:"images/diamastone_images/contemporary/33-lg.jpg",
+         title:"Luce Sapphire"
+        },{   
+         photo:"images/diamastone_images/contemporary/37-lg.jpg",
+         title:"Nero Puro"
+        },{   
+         photo:"images/diamastone_images/contemporary/38-lg.jpg",
+         title:"Placid Grey"
+        },{   
+         photo:"images/diamastone_images/contemporary/43-lg.jpg",
+         title:"Amarillo"
+        },{   
+         photo:"images/diamastone_images/contemporary/45-lg.jpg",
+         title:"Terazzo Beige"
+        },{   
+         photo:"images/diamastone_images/contemporary/46-lg.jpg",
+         title:"Topaz Beige"
+        },{   
+         photo:"images/diamastone_images/contemporary/47-lg.jpg",
+         title:"Topaz Brown"
+        },{   
+         photo:"images/diamastone_images/contemporary/50-lg.jpg",
+         title:"T. Topaz Brown"
+        },{   
+         photo:"images/diamastone_images/contemporary/51-lg.jpg",
+         title:"T. Bisque Beige"
+        },{   
+         photo:"images/diamastone_images/contemporary/52-lg.jpg",
+         title:"T. Blanko Antico"
+        },{   
+         photo:"images/diamastone_images/contemporary/53-lg.jpg",
+         title:"T. Grey Dust"
+        },{   
+         photo:"images/diamastone_images/contemporary/54-lg.jpg",
+         title:"T. Nero Puro"
+        },{   
+         photo:"images/diamastone_images/contemporary/55-lg.jpg",
+         title:"T. Placid Grey"
+        },{   
+         photo:"images/diamastone_images/contemporary/57-lg.jpg",
+         title:"T. Topaz Beige"
+        },{   
+         photo:"images/diamastone_images/contemporary/57_2lg.jpg",
+         title:"White Opal"
+        },{   
+         photo:"images/diamastone_images/contemporary/57_3lg.jpg",
+         title:"Yogurt"
+     }
+    ]
+
    },
    {
       group:"Desert",
-      photos:[
-         "images/diamastone_images/desert/01-lg.jpg",
-         "images/diamastone_images/desert/02-lg.jpg",
-         "images/diamastone_images/desert/03-lg.jpg",
-         "images/diamastone_images/desert/04-lg.jpg",
-         "images/diamastone_images/desert/05-lg.jpg",
-         "images/diamastone_images/desert/06-lg.jpg",
-         "images/diamastone_images/desert/06_2lg.jpg",
-         "images/diamastone_images/desert/07-lg.jpg",
-         "images/diamastone_images/desert/08-lg.jpg",
-         "images/diamastone_images/desert/09-lg.jpg",
-         "images/diamastone_images/desert/10-lg.jpg",
-         "images/diamastone_images/desert/11-lg.jpg",
-         "images/diamastone_images/desert/12-lg.jpg",
-         "images/diamastone_images/desert/12_2lg.jpg",
-         "images/diamastone_images/desert/13-lg.jpg",
-         "images/diamastone_images/desert/Desert_Abalone_lg.jpg",
-         "images/diamastone_images/desert/Desert_Birch_lg.jpg",
-         "images/diamastone_images/desert/Desert_Black_Mirage_lg.jpg",
-         "images/diamastone_images/desert/Desert_Black_Night_lg.jpg",
-         "images/diamastone_images/desert/Desert_Buff_lg.jpg",
-         "images/diamastone_images/desert/Desert_Calypso_lg.jpg",
-         "images/diamastone_images/desert/Desert_Colony_Brown_lg.jpg",
-         "images/diamastone_images/desert/Desert_Deville_lg.jpg",
-         "images/diamastone_images/desert/Desert_Dolomite_lg.jpg",
-         "images/diamastone_images/desert/Desert_Espresso_lg.jpg",
-         "images/diamastone_images/desert/Desert_Fossil_lg.jpg",
-         "images/diamastone_images/desert/Desert_Harvest_lg.jpg",
-         "images/diamastone_images/desert/Desert_Mink_lg.jpg",
-         "images/diamastone_images/desert/Desert_Moonlight_lg.jpg",
-         "images/diamastone_images/desert/Desert_Oak_lg.jpg",
-         "images/diamastone_images/desert/Desert_Olympic_Beige_lg.jpg",
-         "images/diamastone_images/desert/Desert_Oyster_lg.jpg",
-         "images/diamastone_images/desert/Desert_Pewter_lg.jpg",
-         "images/diamastone_images/desert/Desert_Rubi_Mirage_lg.jpg",
-         "images/diamastone_images/desert/Desert_Rum_lg.jpg",
-         "images/diamastone_images/desert/Desert_Russet_lg.jpg",
-         "images/diamastone_images/desert/Desert_Tempest_lg.jpg",
-         "images/diamastone_images/desert/Desert_Truffle_lg.jpg",
-         "images/diamastone_images/desert/Desert_Tundra_lg.jpg"
-      ]
+      photos:[{
+         photo:"images/diamastone_images/desert/01-lg.jpg",
+         title:"Desert Bavaria"
+     },{         
+         photo:"images/diamastone_images/desert/03-lg.jpg",
+         title:"Desert Blanco"
+     },{         
+         photo:"images/diamastone_images/desert/04-lg.jpg",
+         title:"Desert Cream"
+     },{         
+         photo:"images/diamastone_images/desert/05-lg.jpg",
+         title:"Desert Fog"
+     },{         
+         photo:"images/diamastone_images/desert/06-lg.jpg",
+         title:"Desert Pearl"
+     },{         
+         photo:"images/diamastone_images/desert/06_2lg.jpg",
+         title:"Desert Petal"
+     },{         
+         photo:"images/diamastone_images/desert/07-lg.jpg",
+         title:"Desert Sand"
+     },{         
+         photo:"images/diamastone_images/desert/08-lg.jpg",
+         title:"Desert Shade"
+     },{         
+         photo:"images/diamastone_images/desert/09-lg.jpg",
+         title:"Desert Sierra"
+     },{         
+         photo:"images/diamastone_images/desert/10-lg.jpg",
+         title:"Desert Snow"
+     },{         
+         photo:"images/diamastone_images/desert/11-lg.jpg",
+         title:"Desert Spice"
+     },{         
+         photo:"images/diamastone_images/desert/12-lg.jpg",
+         title:"Desert Stone"
+     },{         
+         photo:"images/diamastone_images/desert/12_2lg.jpg",
+         title:"Desert Ultra White"
+     },{         
+         photo:"images/diamastone_images/desert/13-lg.jpg",
+         title:"Desert White"
+     },{                
+         photo:"images/diamastone_images/desert/Desert_Abalone_lg.jpg",
+         title:"Desert Abalone"
+    },{
+       photo:"images/diamastone_images/desert/Desert_Birch_lg.jpg",
+         title:"Desert Brich"
+    },{
+         photo:"images/diamastone_images/desert/Desert_Black_Mirage_lg.jpg",
+         title:"Desert B. Mirage"
+    },{  
+         photo:"images/diamastone_images/desert/Desert_Black_Night_lg.jpg",
+         title:"Desert B. Night"
+    },{   
+         photo:"images/diamastone_images/desert/Desert_Buff_lg.jpg",
+         title:"Desert Buff"
+    },{  
+         photo:"images/diamastone_images/desert/Desert_Calypso_lg.jpg",
+         title:"Desert Calypso"
+    },{   
+         photo:"images/diamastone_images/desert/Desert_Colony_Brown_lg.jpg",
+         title:"Desert Colony"
+    },{   
+         photo:"images/diamastone_images/desert/Desert_Deville_lg.jpg",
+         title:"Desert Deville"
+    },{ 
+         photo:"images/diamastone_images/desert/Desert_Dolomite_lg.jpg",
+         title:"Desert Dolomite"
+    },{   
+         photo:"images/diamastone_images/desert/Desert_Espresso_lg.jpg",
+         title:"Desert Espresso"
+    },{   
+         photo:"images/diamastone_images/desert/Desert_Fossil_lg.jpg",
+         title:"Desert Fossil"
+    },{   
+         photo:"images/diamastone_images/desert/Desert_Harvest_lg.jpg",
+         title:"Desert Harvest"
+    },{  
+         photo:"images/diamastone_images/desert/Desert_Mink_lg.jpg",
+         title:"Desert Mink"
+    },{    
+         photo:"images/diamastone_images/desert/Desert_Moonlight_lg.jpg",
+         title:"Desert Moonlight"
+    },{     
+         photo:"images/diamastone_images/desert/Desert_Oak_lg.jpg",
+         title:"Desert Oak"
+    },{          
+         photo:"images/diamastone_images/desert/Desert_Olympic_Beige_lg.jpg",
+         title:"Desert Olympic"
+     },{         
+         photo:"images/diamastone_images/desert/Desert_Oyster_lg.jpg",
+         title:"Desert Oyster"
+    },{          
+         photo:"images/diamastone_images/desert/Desert_Pewter_lg.jpg",
+         title:"Desert Pewter"
+    },{          
+         photo:"images/diamastone_images/desert/Desert_Rubi_Mirage_lg.jpg",
+         title:"Desert Rubi"
+    },{          
+         photo:"images/diamastone_images/desert/Desert_Rum_lg.jpg",
+         title:"Desert Rum"
+    },{          
+         photo:"images/diamastone_images/desert/Desert_Russet_lg.jpg",
+         title:"Desert Russet"
+    },{          
+         photo:"images/diamastone_images/desert/Desert_Tempest_lg.jpg",
+         title:"Desert Tempest"
+    },{         
+         photo:"images/diamastone_images/desert/Desert_Truffle_lg.jpg",
+         title:"Desert Truffle"
+    },{          
+         photo:"images/diamastone_images/desert/Desert_Tundra_lg.jpg",
+         title:"Desert Tundra"          
+      }]
    },
    {
       group:"Primary",
-      photos:[
-         "images/diamastone_images/primary/01-lg.jpg",
-         "images/diamastone_images/primary/02-lg.jpg",
-         "images/diamastone_images/primary/03-lg.jpg",
-         "images/diamastone_images/primary/04-lg.jpg",
-         "images/diamastone_images/primary/05-lg.jpg",
-         "images/diamastone_images/primary/06-lg.jpg",
-         "images/diamastone_images/primary/07-lg.jpg",
-         "images/diamastone_images/primary/08-lg.jpg",
-         "images/diamastone_images/primary/09-lg.jpg",
-         "images/diamastone_images/primary/10-lg.jpg",
-         "images/diamastone_images/primary/11-lg.jpg",
-         "images/diamastone_images/primary/11_2lg.jpg",
-         "images/diamastone_images/primary/12-lg.jpg",
-         "images/diamastone_images/primary/13-lg.jpg",
-         "images/diamastone_images/primary/13_2lg.jpg",
-         "images/diamastone_images/primary/14-lg.jpg",
-         "images/diamastone_images/primary/15-lg.jpg",
-         "images/diamastone_images/primary/16-lg.jpg",
-         "images/diamastone_images/primary/17-lg.jpg",
-         "images/diamastone_images/primary/17_2lg.jpg",
-         "images/diamastone_images/primary/17_3lg.jpg",
-         "images/diamastone_images/primary/18-lg.jpg",
-         "images/diamastone_images/primary/19-lg.jpg",
-         "images/diamastone_images/primary/20-lg.jpg",
-         "images/diamastone_images/primary/21-lg.jpg",
-         "images/diamastone_images/primary/22-lg.jpg",
-         "images/diamastone_images/primary/22_2lg.jpg",
-         "images/diamastone_images/primary/23-lg.jpg",
-         "images/diamastone_images/primary/24-lg.jpg",
-         "images/diamastone_images/primary/24_2lg.jpg"
-      ]
+      photos:[{
+            photo:"images/diamastone_images/primary/02-lg.jpg",
+            title:"Beach Sand"
+        },{
+            photo:"images/diamastone_images/primary/03-lg.jpg",
+            title:"Beige Desierto"
+        },{
+            photo:"images/diamastone_images/primary/04-lg.jpg",
+            title:"Beige Duna"
+        },{
+            photo:"images/diamastone_images/primary/05-lg.jpg",
+            title:"Biscote"
+        },{
+            photo:"images/diamastone_images/primary/06-lg.jpg",
+            title:"Black Mirage"
+        },{
+            photo:"images/diamastone_images/primary/07-lg.jpg",
+            title:"Blue Mirage"
+        },{
+            photo:"images/diamastone_images/primary/08-lg.jpg",
+            title:"Canyon"
+        },{
+            photo:"images/diamastone_images/primary/10-lg.jpg",
+            title:"Cobblestone"
+        },{
+            photo:"images/diamastone_images/primary/11-lg.jpg",
+            title:"Corfu"
+        },{
+            photo:"images/diamastone_images/primary/11_2lg.jpg",
+            title:"Fossil"
+        },{
+            photo:"images/diamastone_images/primary/13-lg.jpg",
+            title:"Gobi"
+        },{
+            photo:"images/diamastone_images/primary/13_2lg.jpg",
+            title:"Golder Rod"
+        },{
+            photo:"images/diamastone_images/primary/14-lg.jpg",
+            title:"Grey Mirage"
+        },{
+            photo:"images/diamastone_images/primary/16-lg.jpg",
+            title:"Kenya"
+        },{
+            photo:"images/diamastone_images/primary/17-lg.jpg",
+            title:"Maize Mirage"
+        },{
+            photo:"images/diamastone_images/primary/17_2lg.jpg",
+            title:"Mist"
+        },{
+            photo:"images/diamastone_images/primary/17_3lg.jpg",
+            title:"Nougat"
+        },{
+            photo:"images/diamastone_images/primary/20-lg.jpg",
+            title:"Rubi"
+        },{
+            photo:"images/diamastone_images/primary/22-lg.jpg",
+            title:"Stucco"
+        },{
+            photo:"images/diamastone_images/primary/22_2lg.jpg",
+            title:"Sunshine"
+        },{
+            photo:"images/diamastone_images/primary/23-lg.jpg",
+            title:"White Diamonds"
+        },{
+            photo:"images/diamastone_images/primary/24-lg.jpg",
+            title:"Wine Mirage"
+        },{
+            photo:"images/diamastone_images/primary/24_2lg.jpg",
+            title:"Willow"
+        }]
    }
 ];
      var sliders = [{
@@ -427,51 +713,10 @@
           }
 
      ];
-     var desert = [{
-             image: "./images/desert/01-lg.jpg",
-             title:""
-         }, {
-             image: "./images/desert/01-lg-1.jpg",
-             title:""
-         }, {
-             image: "./images/desert/01-lg-2.jpg",
-             title:""
-         }, {
-             image: "./images/desert/01-lg-3.jpg",
-             title:""
-         }, {
-             image: "./images/desert/01-lg-4.jpg",
-             title:""
-
-         }, {
-             image: "./images/desert/02-lg.jpg",
-             title:""
-         }, {
-             image: "./images/desert/02-lg-1.jpg",
-             title:""
-         }, {
-             image: "./images/desert/02-lg-2.jpg",
-             title:""
-         }, {
-             image: "./images/desert/02-lg-3.jpg",
-             title:""
-         }, {
-             image: "./images/desert/02-lg-4.jpg",
-             title:""
-         }, {
-             image: "./images/desert/03-3.jpg",
-             title:""
-         }, {
-             image: "./images/desert/03-lg-1.jpg",
-             title:""
-         }, {
-             image: "./images/desert/03-lg-2.jpg",
-             title:""
-         }            
-
-     ];
+    
 var belenco = [
    {
+      info:"Belenco's Exclusive Line each year enables to sense an awareness. These theme oriented group of products are inspired by Belenco's social, cultural, environmental consciousness to respect the differences in the environment of our planet. Each year, Belenco promotes to protect natural designs of stones as found in its pure originality in its own habitat. Belenco committed its technology, to give a re-birth to the nature's own designs and bringing in light the organic patterns those are rarely found in today's world.",
       group:"Belenco Exclusive",
       photos:[
          {
@@ -518,6 +763,7 @@ var belenco = [
       ]
    },
    {
+      info:"Designed for the courageous souls, the followers of dynamically changing looks in their living spaces as their moods take them. Belenco's Fresh Fashion line is prepared for mood followers, the rulers of the change, who are a step ahead of the fashion market to set the trends. Selected to fit the tastes of a change driver, reflecting their trend setter personalities in living spaces, which they define as their personal catwalk.Created for a fashion runway with a touch of Quartz, for the followers of the upbeat, trendy styles, changing dynamic looks of a fancy, urban-modern life.Belenco's Fresh Fashion line is prepared for fashion lovers to fit the tastes of a real trendy souls, reflecting their ways of doing things in living spaces they breath in. Created for fashionable ambiances with a touch of Quartz. ",  
       group:"Fresh Fashion",
       photos:[
          {
@@ -557,6 +803,7 @@ var belenco = [
       ]
    },
    {
+      info:"Designed for the extravagant souls, the real visionaires. Serves the individuals with elevated luxury tastes, lovers of out of the box, unique products created by their own detailed desires on demand. Haute Couture line of Belenco, enables the unique, personalised bespoke tailoring for total control over creating your unique quartz surfaces. Belenco's Haute Couture line of surfaces, enable designers of all living spaces to enjoy a tailor made quartz surface creation with Belenco team . Belenco Haute Couture Line is Selected to fit the dreams of a creative soul, created for a VIP runway in your space with a touch of Quartz. ",  
       group:"Haute Couture",
       photos:[
          {
@@ -617,6 +864,7 @@ var belenco = [
       ]
    },
    {
+      info:"Designed by the lovers of an all time chic, elegant classic looks. Belenco's classical Pret-A-Porter line is prepared for an unmistakenly selected, all time fit for all types of ambiances by the touch of Quartz. ",  
       group:"Pret-A-Porter",
       photos:[
          {
@@ -697,7 +945,11 @@ var belenco = [
          }
          
       ]
-   }
+   },
+   {
+      info:"Feel the silk touch! Embrace elegance in your kitchen with Belenco® Seta! Enjoy the silk touch guarded by the strength of quartz all together in the unmatched surface finish Seta by Belenco ... Belenco® remains to lead the sector with pioneering innovations based on the philosophy of Quality, Technology and Design. By way of re-rendering the conventional natural stone textures from a modern and unique viewpoint, Belenco has produced the brand-new Belenco® Seta collection of counter surfaces addressing all of the senses going beyond the common. Seta has been specially designed for those who want to feel the natural characteristics of silk each time they touch a kitchen countertop or a bathroom vanity. Slightly wavy form of Seta collection provides Belenco® Quartz Surface with a lively effect of depth while producing a silky feeling thanks to its special finish. Belenco® undersigns outstanding designs in modern spaces with its new surface finish where the elegance of silk is accompanied by the strength of quartz. The silk touch introduced by Seta is available in five different colour alternatives. Seta collection stones: Fancy Cherry, Royal Black, Spa Black, Metropol Grey and Praline. ",  
+      group:"A silk touch on surfaces with BELENCO SETA...",
+   }   
 ];
 
 
@@ -2034,10 +2286,7 @@ var silestone = [
      this.getCaesarstone = function() {
         return caesarstone;
      }        
-     this.getDesert = function() {
 
-        return desert;
-     }
      this.getSilestone = function() {
 
         return silestone;

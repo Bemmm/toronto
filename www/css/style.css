@@ -265,6 +265,9 @@ body h1 {
 body h1:first-letter {
     font-size:60px;
 }
+body h1 span span:first-letter{
+    font-size:60px; 
+}
 
 body h2 {
     font-size: 36px;
@@ -569,7 +572,7 @@ h3 {
 
 .carousel-inner .slider-tittle .get-free-button {
     width: auto;
-    z-index: 4;
+    z-index: 5;
     position: relative;
     padding: 0;
     margin-top: 10px;
@@ -1011,6 +1014,8 @@ box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.3);
     margin-top: 20px;
     
 }
+
+
 .gallery-item .gallery-image img{
     width:100%;
 }
@@ -1119,6 +1124,10 @@ box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.3);
     }
     #map{
         height: 300px !important;
+    }
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+    padding: 0!important;
     }
         .operation-hours{
         text-align: center;

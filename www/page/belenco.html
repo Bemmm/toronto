@@ -12,8 +12,10 @@
 	<div class="row container-pad20" ng-repeat="groupname in belenco">
 
 	<h2 style="padding-bottom:20px;">{{groupname.group}}</h2>
-
-		<div class="silestone-item col-lg-2 " ng-repeat="item in groupname.photos">
+	<div class="container-pad20">	
+		<h4>{{groupname.info}}</h4>
+	</div>	
+		<div class="silestone-item col-lg-2 col-md-2 col-sm-2 col-xs-12" ng-repeat="item in groupname.photos">
 			<div class="silestone-img" ng-click="belencoOpen(item, groupname.group)">
 				<a href="" class="" rel="" >
 					<img ng-src="{{item.prev}}" alt="">

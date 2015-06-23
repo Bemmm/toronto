@@ -33,12 +33,13 @@
 		</h4>
 <div ng-controller="TabsDemoCtrl" class="container-pad20">
   <tabset justified="true" class="inventory-tabs">
-    <tab ng-repeat="items in diamastone" heading="{{items.group}}">
+    <tab ng-repeat="item in diamastone" heading="{{item.group}}">
         <div class="row text-center">
-            <div class="container container-pad20" ng-repeat="item in items">
+            <div class="container container-pad20" >
             <div class="row ">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 diamastone-item container-pad20" ng-repeat="photos in item">
-                    <div class="diamastone-img"><a href="{{photos}}" rel="{{item.group}}" class="fancybox"><div download-img="{{photos}}" style="width:100%">{{photos}}</div></a></div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 diamastone-item container-pad20" ng-repeat="element in item.photos">
+                    <div class="diamastone-img"><a href="{{photos}}" rel="{{item.group}}" class="fancybox"><div download-img="{{element.photo}}" style="width:100%">{{item.photos.photo}}</div></a></div>
+                    <h4>{{element.title}}</h4>
                 </div>
             </div>
             </div>

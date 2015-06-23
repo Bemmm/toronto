@@ -8,8 +8,6 @@ angular.module('myapp', ["ngRoute",
 
 })
 
-
-
 .controller('ModalDemoCtrl', function ($scope, $modal, $log) {
 
   $scope.items = ['item1', 'item2', 'item3'];
@@ -263,7 +261,6 @@ $scope.silestone = [
         $scope.suppliers = storage.getSuppliers();
         $scope.slab = storage.getSlab();
         $scope.testimonials = storage.testimonials();
-        $scope.desert = storage.getDesert();    
         $scope.caesarstone = storage.getCaesarstone();
         $scope.silestone = storage.getSilestone();
         $scope.belenco = storage.getBelenco();
@@ -283,7 +280,6 @@ $scope.silestone = [
             },
             {
                 name: "Products",
-                href: "#/slab-inventory",
                 active: false,
                 bot_menu: true,
                 submenu: [

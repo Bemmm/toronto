@@ -282,6 +282,7 @@ $scope.silestone = [
                 name: "Products",
                 active: false,
                 bot_menu: true,
+                href: '#/slab-inventory'
                 submenu: [
                     {
                         name: "Slab Inventory",

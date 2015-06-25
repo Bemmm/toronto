@@ -463,9 +463,15 @@ span {
 
 .dropdown-menu-cover li a:hover {
     background-color: #ff7e00 !important;
+    color: #fff !important;
 }
 .dropdown-menu-cover li a:active {
-    background-color: #fff !important;
+    background-color: #ff7e00 !important;
+    color: #fff !important;
+}
+.dropdown-menu-cover li a:visited {
+    background-color: #ff7e00 !important;
+    color: #fff !important;
 }
 .active {
     color: #ff7e00;
@@ -1185,7 +1191,7 @@ box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.3);
         width: 60%;
     }
     body h1{
-        font-size: 25px;
+        font-size: 23px;
     }
     .service-find-button{
         margin-top: 30px;

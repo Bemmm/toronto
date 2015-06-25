@@ -175,7 +175,15 @@ body {
     height: 100%;
     width: 100%;
 }
-
+.sticky-footer{
+    min-height: 100% !important;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100% !important;
+    margin: 0 auto -361px; /* the bottom margin is the negative value of the footer's height */
+}
+.sticky-footer, .push {
+    height: 361px; /* .push must be the same height as .footer */
+}
 .hidden {
     display: none;
 }

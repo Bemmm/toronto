@@ -1,0 +1,30 @@
+<script>
+       initFancyBox();
+</script>
+<carousel interval="10000">
+    <slide ng-repeat="slide in slides" active="slide.active" style="max-height:600px; overflow:hidden;">
+        <img ng-src="{{slide.image}}" alt="">
+
+    </slide>
+
+</carousel>
+<div class="container container-pad50">
+<div class=" text-center container-pad20" style="padding-top:0;">
+    <h1><span>TCE</span> Quartz</h1>
+</div>
+<div class="row caesarstone-item" >
+
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 caesarstone-img" ng-repeat="item in tce" style="margin-bottom:10px;">
+        <a href="{{item.full}}" rel="{{item.name}}" class="fancybox">
+            <img ng-src="{{item.prev}}" alt="">
+        </a>
+    <div class="text-center">
+        <h4>{{item.title}}</h4>
+    </div>      
+    </div>
+
+
+</div>
+
+
+</div>

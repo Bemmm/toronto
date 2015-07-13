@@ -1,6 +1,591 @@
  angular.module('storageMod', [])
 
  .service('storage', function() {
+    var tce = [
+        {
+            prev:"images/tce/1prev.jpg",
+            full:"images/tce/1.jpg",
+            title:"TCE1196"
+        },
+        {
+            prev:"images/tce/2prev.jpg",
+            full:"images/tce/2.jpg",
+            title:"TCE1214"
+        },
+        {
+            prev:"images/tce/3prev.jpg",
+            full:"images/tce/3.jpg",
+            title:"TCE1216"
+        },
+        {
+            prev:"images/tce/4prev.jpg",
+            full:"images/tce/4.jpg",
+            title:"TCE1219"
+        },
+        {
+            prev:"images/tce/5prev.jpg",
+            full:"images/tce/5.jpg",
+            title:"TCE1478"
+        },
+        {
+            prev:"images/tce/6prev.jpg",
+            full:"images/tce/6.jpg",
+            title:"TCE1525"
+        },
+        {
+            prev:"images/tce/7prev.jpg",
+            full:"images/tce/7.jpg",
+            title:"TCE1529"
+        },
+        {
+            prev:"images/tce/8prev.jpg",
+            full:"images/tce/8.jpg",
+            title:"TCE1531"
+        },
+        {
+            prev:"images/tce/9prev.jpg",
+            full:"images/tce/9.jpg",
+            title:"TCE1538"
+        },
+        {
+            prev:"images/tce/10prev.jpg",
+            full:"images/tce/10.jpg",
+            title:"TCE1540"
+        },
+        {
+            prev:"images/tce/11prev.jpg",
+            full:"images/tce/11.jpg",
+            title:"TCE1547"
+        },
+        {
+            prev:"images/tce/12prev.jpg",
+            full:"images/tce/12.jpg",
+            title:"TCE1551"
+        },
+        {
+            prev:"images/tce/13prev.jpg",
+            full:"images/tce/13.jpg",
+            title:"TCE1560"
+        },
+        {
+            prev:"images/tce/14prev.jpg",
+            full:"images/tce/14.jpg",
+            title:"TCE1565"
+        },
+        {
+            prev:"images/tce/15prev.jpg",
+            full:"images/tce/15.jpg",
+            title:"TCE1612"
+        },
+        {
+            prev:"images/tce/16prev.jpg",
+            full:"images/tce/16.jpg",
+            title:"TCE1674"
+        },
+        {
+            prev:"images/tce/17prev.jpg",
+            full:"images/tce/17.jpg",
+            title:"TCE1682"
+        },
+        {
+            prev:"images/tce/18prev.jpg",
+            full:"images/tce/18.jpg",
+            title:"TCE1694"
+        },
+        {
+            prev:"images/tce/19prev.jpg",
+            full:"images/tce/19.jpg",
+            title:"TCE1697"
+        },
+        {
+            prev:"images/tce/20prev.jpg",
+            full:"images/tce/20.jpg",
+            title:"TCE1703"
+        },
+        {
+            prev:"images/tce/21prev.jpg",
+            full:"images/tce/21.jpg",
+            title:"TCE1902"
+        },
+        {
+            prev:"images/tce/22prev.jpg",
+            full:"images/tce/22.jpg",
+            title:"TCE2011"
+        },
+        {
+            prev:"images/tce/23prev.jpg",
+            full:"images/tce/23.jpg",
+            title:"TCE2012"
+        },
+        {
+            prev:"images/tce/24prev.jpg",
+            full:"images/tce/24.jpg",
+            title:"TCE2013"
+        },
+        {
+            prev:"images/tce/25prev.jpg",
+            full:"images/tce/25.jpg",
+            title:"TCE2014"
+        },
+        {
+            prev:"images/tce/26prev.jpg",
+            full:"images/tce/26.jpg",
+            title:"TCE2015"
+        },
+        {
+            prev:"images/tce/27prev.jpg",
+            full:"images/tce/27.jpg",
+            title:"TCE2016"
+        },
+        {
+            prev:"images/tce/28prev.jpg",
+            full:"images/tce/28.jpg",
+            title:"TCE2017"
+        },
+        {
+            prev:"images/tce/29prev.jpg",
+            full:"images/tce/29.jpg",
+            title:"TCE2019"
+        },
+        {
+            prev:"images/tce/30prev.jpg",
+            full:"images/tce/30.jpg",
+            title:"TCE2020"
+        },
+        {
+            prev:"images/tce/31prev.jpg",
+            full:"images/tce/31.jpg",
+            title:"TCE2022"
+        },
+        {
+            prev:"images/tce/32prev.jpg",
+            full:"images/tce/32.jpg",
+            title:"TCE2024"
+        },
+        {
+            prev:"images/tce/33prev.jpg",
+            full:"images/tce/33.jpg",
+            title:"TCE2025"
+        },
+        {
+            prev:"images/tce/34prev.jpg",
+            full:"images/tce/34.jpg",
+            title:"TCE2026"
+        },
+        {
+            prev:"images/tce/35prev.jpg",
+            full:"images/tce/35.jpg",
+            title:"TCE2027"
+        },
+        {
+            prev:"images/tce/36prev.jpg",
+            full:"images/tce/36.jpg",
+            title:"TCE2031"
+        },
+        {
+            prev:"images/tce/37prev.jpg",
+            full:"images/tce/37.jpg",
+            title:"TCE2032"
+        },
+        {
+            prev:"images/tce/38prev.jpg",
+            full:"images/tce/38.jpg",
+            title:"TCE2033"
+        },
+        {
+            prev:"images/tce/39prev.jpg",
+            full:"images/tce/39.jpg",
+            title:"TCE2034"
+        },
+        {
+            prev:"images/tce/40prev.jpg",
+            full:"images/tce/40.jpg",
+            title:"TCE2035"
+        },
+        {
+            prev:"images/tce/41prev.jpg",
+            full:"images/tce/41.jpg",
+            title:"TCE3001"
+        },
+        {
+            prev:"images/tce/42prev.jpg",
+            full:"images/tce/42.jpg",
+            title:"TCE3002"
+        },
+        {
+            prev:"images/tce/43prev.jpg",
+            full:"images/tce/43.jpg",
+            title:"TCE3003"
+        },
+        {
+            prev:"images/tce/44prev.jpg",
+            full:"images/tce/44.jpg",
+            title:"TCE3004"
+        },
+        {
+            prev:"images/tce/45prev.jpg",
+            full:"images/tce/45.jpg",
+            title:"TCE3005"
+        },
+        {
+            prev:"images/tce/46prev.jpg",
+            full:"images/tce/46.jpg",
+            title:"TCE3007"
+        },
+        {
+            prev:"images/tce/47prev.jpg",
+            full:"images/tce/47.jpg",
+            title:"TCE4002"
+        },
+        {
+            prev:"images/tce/48prev.jpg",
+            full:"images/tce/48.jpg",
+            title:"TCE4003"
+        },
+        {
+            prev:"images/tce/49prev.jpg",
+            full:"images/tce/49.jpg",
+            title:"TCE4004"
+        },
+        {
+            prev:"images/tce/50prev.jpg",
+            full:"images/tce/50.jpg",
+            title:"TCE4005"
+        },
+        {
+            prev:"images/tce/51prev.jpg",
+            full:"images/tce/51.jpg",
+            title:"TCE4006"
+        },
+        {
+            prev:"images/tce/52prev.jpg",
+            full:"images/tce/52.jpg",
+            title:"TCE4008"
+        },
+        {
+            prev:"images/tce/53prev.jpg",
+            full:"images/tce/53.jpg",
+            title:"TCE4012"
+        },
+        {
+            prev:"images/tce/54prev.jpg",
+            full:"images/tce/54.jpg",
+            title:"TCE4017"
+        },
+        {
+            prev:"images/tce/55prev.jpg",
+            full:"images/tce/55.jpg",
+            title:"TCE4021"
+        },
+        {
+            prev:"images/tce/56prev.jpg",
+            full:"images/tce/56.jpg",
+            title:"TCE5011"
+        },
+        {
+            prev:"images/tce/57prev.jpg",
+            full:"images/tce/57.jpg",
+            title:"TCE5012"
+        },
+        {
+            prev:"images/tce/58prev.jpg",
+            full:"images/tce/58.jpg",
+            title:"TCE5013"
+        },
+        {
+            prev:"images/tce/59prev.jpg",
+            full:"images/tce/59.jpg",
+            title:"TCE5014"
+        },
+        {
+            prev:"images/tce/60prev.jpg",
+            full:"images/tce/60.jpg",
+            title:"TCE5015"
+        },                                                                       
+        {
+            prev:"images/tce/61prev.jpg",
+            full:"images/tce/61.jpg",
+            title:"TCE5016"
+        },
+        {
+            prev:"images/tce/62prev.jpg",
+            full:"images/tce/62.jpg",
+            title:"TCE6001"
+        },
+        {
+            prev:"images/tce/63prev.jpg",
+            full:"images/tce/63.jpg",
+            title:"TCE070329-4"
+        },
+        {
+            prev:"images/tce/64prev.jpg",
+            full:"images/tce/64.jpg",
+            title:"TCE101216-3"
+        },
+        {
+            prev:"images/tce/65prev.jpg",
+            full:"images/tce/65.jpg",
+            title:"TCE110117-2"
+        },
+        {
+            prev:"images/tce/66prev.jpg",
+            full:"images/tce/66.jpg",
+            title:"TCE110429-4"
+        },
+        {
+            prev:"images/tce/67prev.jpg",
+            full:"images/tce/67.jpg",
+            title:"TCE110810-2"
+        },
+        {
+            prev:"images/tce/68prev.jpg",
+            full:"images/tce/68.jpg",
+            title:"TCE120306-1"
+        },
+        {
+            prev:"images/tce/69prev.jpg",
+            full:"images/tce/69.jpg",
+            title:"TCE120523-2"
+        },
+        {
+            prev:"images/tce/70prev.jpg",
+            full:"images/tce/70.jpg",
+            title:"TCE168"
+        },
+        {
+            prev:"images/tce/71prev.jpg",
+            full:"images/tce/71.jpg",
+            title:"TCE178"
+        },
+        {
+            prev:"images/tce/72prev.jpg",
+            full:"images/tce/72.jpg",
+            title:"TCE196-1"
+        },
+        {
+            prev:"images/tce/73prev.jpg",
+            full:"images/tce/73.jpg",
+            title:"TCE227"
+        },
+        {
+            prev:"images/tce/74prev.jpg",
+            full:"images/tce/74.jpg",
+            title:"TCE469"
+        },
+        {
+            prev:"images/tce/75prev.jpg",
+            full:"images/tce/75.jpg",
+            title:"TCE227"
+        },
+        {
+            prev:"images/tce/76prev.jpg",
+            full:"images/tce/76.jpg",
+            title:"TCE469"
+        },
+        {
+            prev:"images/tce/77prev.jpg",
+            full:"images/tce/77.jpg",
+            title:"TCE471"
+        },
+        {
+            prev:"images/tce/78prev.jpg",
+            full:"images/tce/78.jpg",
+            title:"TCE481"
+        },
+        {
+            prev:"images/tce/79prev.jpg",
+            full:"images/tce/79.jpg",
+            title:"TCE493"
+        },
+        {
+            prev:"images/tce/80prev.jpg",
+            full:"images/tce/80.jpg",
+            title:"TCE502"
+        },
+        {
+            prev:"images/tce/81prev.jpg",
+            full:"images/tce/81.jpg",
+            title:"TCE503"
+        },
+        {
+            prev:"images/tce/82prev.jpg",
+            full:"images/tce/82.jpg",
+            title:"TCE505"
+        },
+        {
+            prev:"images/tce/83prev.jpg",
+            full:"images/tce/83.jpg",
+            title:"TCE50601"
+        },
+        {
+            prev:"images/tce/84prev.jpg",
+            full:"images/tce/84.jpg",
+            title:"TCE513"
+        },
+        {
+            prev:"images/tce/85prev.jpg",
+            full:"images/tce/85.jpg",
+            title:"TCE518"
+        },
+        {
+            prev:"images/tce/86prev.jpg",
+            full:"images/tce/86.jpg",
+            title:"TCE552"
+        },
+        {
+            prev:"images/tce/87prev.jpg",
+            full:"images/tce/87.jpg",
+            title:"TCE557"
+        },
+        {
+            prev:"images/tce/88prev.jpg",
+            full:"images/tce/88.jpg",
+            title:"TCE566"
+        },
+        {
+            prev:"images/tce/89prev.jpg",
+            full:"images/tce/89.jpg",
+            title:"TCE580"
+        },
+        {
+            prev:"images/tce/90prev.jpg",
+            full:"images/tce/90.jpg",
+            title:"TCE591"
+        },
+        {
+            prev:"images/tce/91prev.jpg",
+            full:"images/tce/91.jpg",
+            title:"TCE611"
+        },
+        {
+            prev:"images/tce/92prev.jpg",
+            full:"images/tce/92.jpg",
+            title:"TCE613"
+        },
+        {
+            prev:"images/tce/93prev.jpg",
+            full:"images/tce/93.jpg",
+            title:"TCE626"
+        },
+        {
+            prev:"images/tce/94prev.jpg",
+            full:"images/tce/94.jpg",
+            title:"TCE669"
+        },
+        {
+            prev:"images/tce/95prev.jpg",
+            full:"images/tce/95.jpg",
+            title:"TCE686"
+        },
+        {
+            prev:"images/tce/96prev.jpg",
+            full:"images/tce/96.jpg",
+            title:"TCE90313-1"
+        },
+        {
+            prev:"images/tce/97prev.jpg",
+            full:"images/tce/97.jpg",
+            title:"TCE90319-9"
+        }                
+
+                                         
+            
+    ];
+
+
+    var goldstar = [
+        {
+            prev:"images/goldstar/1icon.jpg",
+            full:"images/goldstar/1.jpg",
+            title:"Crystal"
+        },
+        {
+            prev:"images/goldstar/2icon.jpg",
+            full:"images/goldstar/2.jpg",
+            title:"Desert"
+        },
+        {
+            prev:"images/goldstar/3icon.jpg",
+            full:"images/goldstar/3.jpg",
+            title:"Diamond Grey"
+        },
+        {
+            prev:"images/goldstar/4icon.jpg",
+            full:"images/goldstar/4.jpg",
+            title:"Eggshell"
+        },
+        {
+            prev:"images/goldstar/5icon.jpg",
+            full:"images/goldstar/5.jpg",
+            title:"Grey Cloud"
+        },
+        {
+            prev:"images/goldstar/6icon.jpg",
+            full:"images/goldstar/6.jpg",
+            title:"Grey Light"
+        },
+        {
+            prev:"images/goldstar/7icon.jpg",
+            full:"images/goldstar/7.jpg",
+            title:"Mocha"
+        },
+        {
+            prev:"images/goldstar/8icon.jpg",
+            full:"images/goldstar/8.jpg",
+            title:"Organic White"
+        },
+        {
+            prev:"images/goldstar/9icon.jpg",
+            full:"images/goldstar/9.jpg",
+            title:"Super White"
+        },
+        {
+            prev:"images/goldstar/10icon.jpg",
+            full:"images/goldstar/10.jpg",
+            title:"White coffe"
+        },
+        {
+            prev:"images/goldstar/11icon.jpg",
+            full:"images/goldstar/11.jpg",
+            title:"White"
+        },
+        {
+            prev:"images/goldstar/12icon.jpg",
+            full:"images/goldstar/12.jpg",
+            title:"Wh. Big Grit"
+        },
+        {
+            prev:"images/goldstar/13icon.jpg",
+            full:"images/goldstar/13.jpg",
+            title:"Beige"
+        },
+        {
+            prev:"images/goldstar/14icon.jpg",
+            full:"images/goldstar/14.jpg",
+            title:"Black"
+        },
+        {
+            prev:"images/goldstar/15icon.jpg",
+            full:"images/goldstar/15.jpg",
+            title:"Black Ice"
+        },
+        {
+            prev:"images/goldstar/16icon.jpg",
+            full:"images/goldstar/16.jpg",
+            title:"Buttermilk"
+        },
+        {
+            prev:"images/goldstar/17icon.jpg",
+            full:"images/goldstar/17.jpg",
+            title:"Classic Espresso"
+        },
+        {
+            prev:"images/goldstar/18icon.jpg",
+            full:"images/goldstar/18.jpg",
+            title:"Carerra"
+        }
+                
+    ];
 
      var diamastone = [
    {
@@ -501,6 +1086,12 @@
              image: "./images/sliders/4.jpg",
              type: "slides"
          }, {
+             image: "./images/sliders/5.jpg",
+             type: "slides"
+         }, {
+             image: "./images/sliders/6.jpg",
+             type: "slides"
+         },{
              image: "./images/slide/slide2sml.jpg",
              type: "slidesSml"
          }, {
@@ -520,47 +1111,109 @@
      ];
 
           var caesarstone = [
-
-
           {
+            name:"New Colors",
+            list: [{
+             image: "/images/caesarstone/name41prev.jpg",
+             thumbnail: "./images/caesarstone/name41previcon.jpg",
+             title: "5111 Staturio Nuvo "
+         },{
+             image: "/images/caesarstone/name42prev.jpg",
+             thumbnail: "./images/caesarstone/name42previcon.jpg",
+             title:"8616 Blue Tiger Eye"
+         },{
+             image: "/images/caesarstone/name43prev.jpg",
+             thumbnail: "./images/caesarstone/name43previcon.jpg",
+             title:"4001 Fresh Concrete"            
+         },{
+             image: "/images/caesarstone/name44prev.jpg",
+             thumbnail: "./images/caesarstone/name44previcon.jpg",
+             title:"8617 Argonite"             
+         },{
+             image: "/images/caesarstone/name45prev.jpg",
+             thumbnail: "./images/caesarstone/name45previcon.jpg",
+             title:"4004 Raw Concrete"             
+         },{
+             image: "/images/caesarstone/name46prev.jpg",
+             thumbnail: "./images/caesarstone/name46previcon.jpg",
+             title:"5130 Cosmopolitan White"             
+         },{
+             image: "/images/caesarstone/name47prev.jpg",
+             thumbnail: "./images/caesarstone/name47previcon.jpg",
+             title:"5134 Urban Safari"             
+         },{
+             image: "/images/caesarstone/name48prev.jpg",
+             thumbnail: "./images/caesarstone/name48previcon.jpg",
+             title: "5133 Symphony Grey"
+         },{
+             image: "/images/caesarstone/name49prev.jpg",
+             thumbnail: "./images/caesarstone/name49previcon.jpg",
+             title: "5212 Taj Royal"
+         },{
+             image: "/images/caesarstone/name50prev.jpg",
+             thumbnail: "./images/caesarstone/name50previcon.jpg",
+             title: "4003 Sleek Concrete "
+         },{
+             image: "/images/caesarstone/name51prev.jpg",
+             thumbnail: "./images/caesarstone/name51previcon.jpg",
+             title: "5131 Calacatta Nuvo"
+         },{
+             image: "/images/caesarstone/name52prev.jpg",
+             thumbnail: "./images/caesarstone/name52previcon.jpg",
+             title: "6131 Bianco Drift"
+         }                     
+            ]
+         },
+
+         {
             name:"Freshwhite",
             list: [{
              image: "/images/caesarstone/name1prev.jpg",
-             thumbnail: "./images/caesarstone/name1previcon.jpg"
+             thumbnail: "./images/caesarstone/name1previcon.jpg",
+             title: "1141"
          },{
              image: "/images/caesarstone/name2prev.jpg",
-             thumbnail: "./images/caesarstone/name2previcon.jpg"
+             thumbnail: "./images/caesarstone/name2previcon.jpg",
+             title: "4600"
          },{
              image: "/images/caesarstone/name3prev.jpg",
-             thumbnail: "./images/caesarstone/name3previcon.jpg"
+             thumbnail: "./images/caesarstone/name3previcon.jpg",
+             title: "4620"
          },{
              image: "/images/caesarstone/name4prev.jpg",
-             thumbnail: "./images/caesarstone/name4previcon.jpg"
+             thumbnail: "./images/caesarstone/name4previcon.jpg",
+             title: "2141"
          },{
              image: "/images/caesarstone/name5prev.jpg",
-             thumbnail: "./images/caesarstone/name5previcon.jpg"
+             thumbnail: "./images/caesarstone/name5previcon.jpg",
+             title: "7143"
          },{
              image: "/images/caesarstone/name6prev.jpg",
-             thumbnail: "./images/caesarstone/name6previcon.jpg"
+             thumbnail: "./images/caesarstone/name6previcon.jpg",
+             title: "3141"
          }
             ]
           },
 
 
           {
-            name:"Shaded Gray",
+            name:"Shaded White",
             list:[{
              image: "/images/caesarstone/name7prev.jpg",
-             thumbnail: "./images/caesarstone/name7previcon.jpg"
+             thumbnail: "./images/caesarstone/name7previcon.jpg",
+             title: "9601"
          },{
              image: "/images/caesarstone/name8prev.jpg",
-             thumbnail: "./images/caesarstone/name8previcon.jpg"
+             thumbnail: "./images/caesarstone/name8previcon.jpg",
+             title: "6600"
          },{
              image: "/images/caesarstone/name9prev.jpg",
-             thumbnail: "./images/caesarstone/name9previcon.jpg"
+             thumbnail: "./images/caesarstone/name9previcon.jpg",
+             title: "4220"
          },{
              image: "/images/caesarstone/name10prev.jpg",
-             thumbnail: "./images/caesarstone/name10previcon.jpg"
+             thumbnail: "./images/caesarstone/name10previcon.jpg",
+             title: "3144"
          }
                 ]
           },
@@ -570,13 +1223,16 @@
             name:"Beige",
             list:[{
              image: "/images/caesarstone/name11prev.jpg",
-             thumbnail: "./images/caesarstone/name11previcon.jpg"
+             thumbnail: "./images/caesarstone/name11previcon.jpg",
+             title: "2200"
          },{
              image: "/images/caesarstone/name12prev.jpg",
-             thumbnail: "./images/caesarstone/name12previcon.jpg"
+             thumbnail: "./images/caesarstone/name12previcon.jpg",
+             title: "2400"
          },{
              image: "/images/caesarstone/name13prev.jpg",
-             thumbnail: "./images/caesarstone/name13previcon.jpg"
+             thumbnail: "./images/caesarstone/name13previcon.jpg",
+             title: "2300"
          }
          ]
           },
@@ -585,13 +1241,16 @@
             name:"Tan Brown",
             list:[{
              image: "/images/caesarstone/name14prev.jpg",
-             thumbnail: "./images/caesarstone/name14previcon.jpg"
+             thumbnail: "./images/caesarstone/name14previcon.jpg",
+             title: "6350"
          },{
              image: "/images/caesarstone/name15prev.jpg",
-             thumbnail: "./images/caesarstone/name15previcon.jpg"
+             thumbnail: "./images/caesarstone/name15previcon.jpg",
+             title: "9350"
          },{
              image: "/images/caesarstone/name16prev.jpg",
-             thumbnail: "./images/caesarstone/name16previcon.jpg"
+             thumbnail: "./images/caesarstone/name16previcon.jpg",
+             title: "2350"
          },]
           },
 
@@ -600,16 +1259,16 @@
             name:"Rich Brown",
             list:[{
              image: "/images/caesarstone/name17prev.jpg",
-             thumbnail: "./images/caesarstone/name17previcon.jpg"
+             thumbnail: "./images/caesarstone/name17previcon.jpg",
+             title: "4350"
          },{
              image: "/images/caesarstone/name18prev.jpg",
-             thumbnail: "./images/caesarstone/name18previcon.jpg"
+             thumbnail: "./images/caesarstone/name18previcon.jpg",
+             title: "2370"
          },{
              image: "/images/caesarstone/name19prev.jpg",
-             thumbnail: "./images/caesarstone/name19previcon.jpg"
-         },{
-             image: "/images/caesarstone/name20prev.jpg",
-             thumbnail: "./images/caesarstone/name20previcon.jpg"
+             thumbnail: "./images/caesarstone/name19previcon.jpg",
+             title: "3380"
          },]
           },
 
@@ -618,19 +1277,24 @@
             name:"Bold Black",
             list:[{
              image: "/images/caesarstone/name21prev.jpg",
-             thumbnail: "./images/caesarstone/name21previcon.jpg"
+             thumbnail: "./images/caesarstone/name21previcon.jpg",
+             title: "3100"
          },{
              image: "/images/caesarstone/name22prev.jpg",
-             thumbnail: "./images/caesarstone/name22previcon.jpg"
+             thumbnail: "./images/caesarstone/name22previcon.jpg",
+             title: "7100"
          },{
              image: "/images/caesarstone/name23prev.jpg",
-             thumbnail: "./images/caesarstone/name23previcon.jpg"
+             thumbnail: "./images/caesarstone/name23previcon.jpg",
+             title: "9140"
          },{
              image: "/images/caesarstone/name24prev.jpg",
-             thumbnail: "./images/caesarstone/name24previcon.jpg"
+             thumbnail: "./images/caesarstone/name24previcon.jpg",
+             title: "6140"
          },{
-             image: "/images/caesarstone/name25prev.jpg",
-             thumbnail: "./images/caesarstone/name25previcon.jpg"
+             image: "/images/caesarstone/name20prev.jpg",
+             thumbnail: "./images/caesarstone/name20previcon.jpg",
+             title: "7250"
          },]
           },
 
@@ -638,16 +1302,20 @@
             name:"Deep Gray",
             list:[{
              image: "/images/caesarstone/name26prev.jpg",
-             thumbnail: "./images/caesarstone/name26previcon.jpg"
+             thumbnail: "./images/caesarstone/name26previcon.jpg",
+             title: "4330"
          },{
              image: "/images/caesarstone/name27prev.jpg",
-             thumbnail: "./images/caesarstone/name27previcon.jpg"
+             thumbnail: "./images/caesarstone/name27previcon.jpg",
+             title: "4120"
          },{
              image: "/images/caesarstone/name28prev.jpg",
-             thumbnail: "./images/caesarstone/name28previcon.jpg"
+             thumbnail: "./images/caesarstone/name28previcon.jpg",
+             title: "2003"
          },{
-             image: "/images/caesarstone/name29prev.jpg",
-             thumbnail: "./images/caesarstone/name29previcon.jpg"
+             image: "/images/caesarstone/name25prev.jpg",
+             thumbnail: "./images/caesarstone/name25previcon.jpg",
+             title: "2003"
          },]
           },
 
@@ -655,13 +1323,16 @@
             name:"Soft Gray",
             list:[{
              image: "/images/caesarstone/name30prev.jpg",
-             thumbnail: "./images/caesarstone/name30previcon.jpg"
+             thumbnail: "./images/caesarstone/name30previcon.jpg",
+             title: "9260"
          },{
              image: "/images/caesarstone/name31prev.jpg",
-             thumbnail: "./images/caesarstone/name31previcon.jpg"
+             thumbnail: "./images/caesarstone/name31previcon.jpg",
+             title: "4141"
          },{
-             image: "/images/caesarstone/name32prev.jpg",
-             thumbnail: "./images/caesarstone/name32previcon.jpg"
+             image: "/images/caesarstone/name29prev.jpg",
+             thumbnail: "./images/caesarstone/name29previcon.jpg",
+             title: "2020"
          },]
           },
 
@@ -670,10 +1341,16 @@
             name:"Vivid Green",
             list:[{
              image: "/images/caesarstone/name33prev.jpg",
-             thumbnail: "./images/caesarstone/name33previcon.jpg"
+             thumbnail: "./images/caesarstone/name33previcon.jpg",
+             title: "2750"
          },{
              image: "/images/caesarstone/name34prev.jpg",
-             thumbnail: "./images/caesarstone/name34previcon.jpg"
+             thumbnail: "./images/caesarstone/name34previcon.jpg",
+             title: "2710"
+         },{
+             image: "/images/caesarstone/name32prev.jpg",
+             thumbnail: "./images/caesarstone/name32previcon.jpg",
+             title: "9170"
          },]
           },
 
@@ -682,7 +1359,8 @@
             name:"Coold Blue",
             list:[{
              image: "/images/caesarstone/name35prev.jpg",
-             thumbnail: "./images/caesarstone/name35previcon.jpg"
+             thumbnail: "./images/caesarstone/name35previcon.jpg",
+             title: "7510"
          },]
           },
 
@@ -691,13 +1369,16 @@
             name:"Warm Red",
             list:[{
              image: "/images/caesarstone/name36prev.jpg",
-             thumbnail: "./images/caesarstone/name36previcon.jpg"
+             thumbnail: "./images/caesarstone/name36previcon.jpg",
+             title: "7450"
          },{
              image: "/images/caesarstone/name37prev.jpg",
-             thumbnail: "./images/caesarstone/name37previcon.jpg"
+             thumbnail: "./images/caesarstone/name37previcon.jpg",
+             title: "2430"
          },{
              image: "/images/caesarstone/name38prev.jpg",
-             thumbnail: "./images/caesarstone/name38previcon.jpg"
+             thumbnail: "./images/caesarstone/name38previcon.jpg",
+             title: "3450"
          },]
           },
 
@@ -705,10 +1386,12 @@
             name:"Motivo",
             list:[{
              image: "/images/caesarstone/name39prev.jpg",
-             thumbnail: "./images/caesarstone/name39previcon.jpg"
+             thumbnail: "./images/caesarstone/name39previcon.jpg",
+             title: "3100C"
          },{
              image: "/images/caesarstone/name40prev.jpg",
-             thumbnail: "./images/caesarstone/name40previcon.jpg"
+             thumbnail: "./images/caesarstone/name40previcon.jpg",
+             title: "2141L"
          }]
           }
 
@@ -1616,10 +2299,179 @@ var silestone = [
              customer: "Anne Winterburn",
              feedback: "We looked around quite a bit but ended up going back to Toronto Granite who were our first choice.  Everyone was so helpful.  We chose a granite which we loved and it was measured and installed in a short time.  They certainly know their stuff.  Thanks guys.  Looks great.   The pictures don't do it justice."
          }, {
-             image: "./images/testimonials/17.jpg",
+             image: "./images/testimonials/lisa&george.jpg",
              customer: "Lisa & George Leff",
              feedback: "Brad and Dan have literally just left after installing granite in our kitchen. We felt impelled to write immediately. We have almost finished a main floor reno and have come into contact with many specialists in their areas along the way; but none compete with the professionalism, knowledge and customer service of Brad and Dan. They are true stars of the company and our granite is more than we ever expected it to be. Thank you TorontoGranite.com but thank you most to Brad and Dan, we will certainly be recommending you to friends and family! Keep up the good work, there's too few like you."
-         }    
+         }, {
+             image: "./images/testimonials/peterdodge.jpg",
+             customer: "Peter Dodge",
+             feedback: "We’re very happy with the way it turned out, thanks again!"
+         }, {
+             image: "./images/testimonials/debbiealbrough.jpg",
+             customer: "Debbie Albrough",
+             feedback: "I just wanted to say thank you for your superb granite and service. I had researched other companies and shopped around from everywhere from Toronto to Stoney Creek looking for the best quality granite with the best price and stopped in my tracks when I found you. I don’t know how many emails I inundated you with before I even came out to look at the granite – your service level is top notch answering every minute detail of each question I asked. Once I made it to your office and met everyone there I knew I had mad the right choice even before seeing the granite. The granite choices are fantastic and so happy with the product we chose. You helped me with the sink dimensions for the cut outs and even knew more about my sink than I did. When delivery time came you arrived exactly when you said you would with the most spectacular piece of granite I had ever seen for the house I was renovating. I have highly recommended you to my friends and families and will be most definitely using your services again when it comes time to renovate my kitchen."
+         }, {
+             image: "./images/testimonials/borissakic.jpg",
+             customer: "Boris Sakic",
+             feedback: "Professional work, outstanding service, A+ experience!  Bojan and Mirko made a piece of art  that will decorate my home for a long time!  Thank you guys for your patience and craftsmanship!"
+         }, {
+             image: "./images/testimonials/srdjannikolovski.jpg",
+             customer: "Srdjan Nikolovski",
+             feedback: "Stop shopping around!!! The combination of service and price is second to none.  They went out of their way to ensure our satisfaction.  Installers were very professional and felt like they were working on a house of their own.  Great job guys and I would definitely recommend to anyone looking for granite countertops."
+         }, {
+             image: "./images/testimonials/edward.jpg",
+             customer: "Edward",
+             feedback: "Those countertops took the kitchen to a different level and look spectacular ! "
+         }, {
+             image: "./images/inf.jpg",
+             customer: "Mihir in Mississauga",
+             feedback: "Very pleased with the professionalism and quality of work, this is a great family run business I would gladly recommend. I shopped around quite a bit before I found this store. I could not believe the prices, so I decided to check out the store. I was pleasantly surprised with the Family. I took a rough measurement with me and Bob was able to give me estimate ALL IN. This was a complete shock to me as I was used to getting nickel and dimed in my earlier quotes. Bob promised he will come by to take measurement and was on time, this was again appreciated as most granite guys do not show up on time…. again Bob throughout the transaction was very professional. I was promised the work will get done on time, The staff arrived on time at 10 am as Bob had mentioned, went on to work meticulously. They did not rush nor did they cut corners. They were done on time and Mark (Bob’s Brother) stopped by to check on them, showed me “they care”. I will be shortly adding a picture of my new kitchen."
+         }, {
+             image: "./images/testimonials/romanandkatka.jpg",
+             customer: "Roman and Katka",
+             feedback: "It was pleasure to work with you guys. Granite looks great. Highly recommended."
+         }, {
+             image: "./images/testimonials/michael&sharon.jpg",
+             customer: "Michael & Sharon ",
+             feedback: "We received Excellent service and we are more than pleased with the quality in the workmanship and attention to detail during our installation  The granite counter makes the kitchen complete. Thanks again to your family and staff  for a job well done .Regards Michael & Sharo"
+         }, {
+             image: "./images/testimonials/lori.jpg",
+             customer: "Lori",
+             feedback: "My counters are beautiful and the service was great!  I'm looking forward to my vanities getting done and will certainly continue to refer you to others!"
+         }, {
+             image: "./images/testimonials/carlosperez.jpg",
+             customer: "Carlos Perez",
+             feedback: "I am tottaly impressed with this company, service was excellent, installation was flawless. My kitchen has tottaly changed it looks so sexy and sleek. It was worth the investment 100%. I will totally recomend this company to my family and friends."
+         }, {
+             image: "./images/testimonials/derekandsandramiller.jpg",
+             customer: "Derek and Sandra Miller",
+             feedback: "Many thanks to Mark and the installers for a excellent job that was completed very promptly(5 days) and for a very fair price.We will be in touch again soon...."
+         }, {
+             image: "./images/testimonials/jon&charlenehodson.jpg",
+             customer: "Jon & Charlene Hodson",
+             feedback: "We love our granite countertop, Bob was extremely helpful.   The installation crew was excellent as well.  We would definatly recommend Toronto Granite to our friends!"
+         }, {
+             image: "./images/testimonials/tinainoakville.jpg",
+             customer: "Tina in Oakville",
+             feedback: "Kichen Counter We recently replaced our laminate countertop in the kitchen with a granite one. After getting a number of quotes we decided to go with Tempotech because of their price, speed of quote and delivery time. From the time that we put down our deposit and selected our slab the counter was done in the same week. Mark worked with us to layout the cuts on the slab so that the large island piece had the most consistent look. There was a small measuring problem with one piece but it was fixed quickly and professionally. We would highly recommend them."
+         }, {
+             image: "./images/testimonials/jean-francoisbrien.jpg",
+             customer: "Jean-Francois Brien",
+             feedback: "Great craftsmanship, great service, quick installation, excellent price...what can I tell you!  Super job guys!  Definitely  recommand Toronto Granite!  Cheers"
+         }, {
+             image: "./images/inf.jpg",
+             customer: "Joe and Maria DiFlorio",
+             feedback: "We absolutely love our new granite counter tops!  The service provided at Toronto Granite was excpetional! We look forward to using Toronto Granite for future granite installations!"
+         }, {
+             image: "./images/testimonials/tara.jpg",
+             customer: "Tara",
+             feedback: "Thanks again, the kitchen looks great with my new granite counters!"
+         }, {
+             image: "./images/testimonials/gailkellough.jpg",
+             customer: "Gail Kellough",
+             feedback: "I recently had a new kitchen installed by a Toronto company that imports Italian cupboards.  For the countertops, I received quotes from granite suppliers  recommended on this site as well as from two companies  recommended by the kitchen suppliers.  The quotes differed quite considerably for exactly the same pattern and quality of granite.  Tempo Tech's quote was the lowest and, on the basis of the excellent recommendations on this site, I chose them to install the countertops.  I am very pleased that  I did.  There was a delay in the installation of the cupboards with the result that I was left with no kitchen sink for several weeks right before Christmas.  Mark came to my rescue and had the countertop measured, cut, and installed five days after the cabinets arrived. Moreover, because the cabinet company had to order an additional panel to complete the kitchen cabinets, there was a small section of the  granite countertop that could not be measured and cut until this last panel arrived from Italy.  Mark could not have been more accommodating: he made two more trips to my home to give me advice, to measure, and to install the granite.  He also was able to fix  a dishwasher installation problem for me (well above and beyond the contracted service!)  The counter-tops look great and I am pleased to give Mark and Tempo Tech the highest possible recommendation."
+         }, {
+             image: "./images/testimonials/rob.jpg",
+             customer: "Rob",
+             feedback: "It was a pleasure working with everybody at Toronto Granite.  The sales staff were friendly and helpful.  The installation crew were clean, courteous, and did a fantastic job.  I will definitely refer your services to others...   "
+         }, {
+             image: "./images/testimonials/marybethklofas.jpg",
+             customer: "Mary Beth Klofas",
+             feedback: "My husband and I live in Rochester, NY and are in our small Toronto condo on occasional weekends. We wanted to have our counters, backsplash, sink, and faucet replaced and found the TempoTech website as a site for granite counters . We liked what we saw. We visited the showroom and made our selection and asked Mark if he would be willing to install the backsplash (including removing the old tile and repairing the drywall), sink, and faucet because we didn't know any contractors in TO and aren't there that much to oversee the project. Although our request was out of the scope of the company, Markly kindly agreed to make all of the arrangements. He did a wonderful job selecting the contractors and overseeing their work (he also e-mailed me photos of the project as it progressed). Keep in mind that we aren't in TO that much, so most of our communication was via e-mail. Mark was wonderful about keeping me informed and my husband and I are delighted with the results. "
+         }, {
+             image: "./images/testimonials/sinisapetrovic.jpg",
+             customer: "Sinisa Petrovic",
+             feedback: "The best possible value for the money. Extremely pleased with material, workmanship and the staff.  Recommend to everybody."
+         }, {
+             image: "./images/testimonials/wayne.jpg",
+             customer: "Wayne",
+             feedback: "A great experience with TorontoGranite.com.  The price was very affordable, installation was great, and great selection of styles to choose from.  Not to mention very fast turn-around - I was expecting 4-6 weeks, but it was ready to be installed in a week!  Will definitely recommend them to my friends!"
+         }, {
+             image: "./images/testimonials/dan&veralawrie.jpg",
+             customer: "Dan & Vera Lawrie",
+             feedback: "We are very happy with our decision to replace our kitchen and bathroom counters.  They look great and we found Toronto Granite easy to work with and very reasonably priced.  Great job!"
+         }, {
+             image: "./images/testimonials/chesterarciga.jpg",
+             customer: "Chester Arciga",
+             feedback: "We absolutely love our granite countertop!  We received such a friendly and approachable service before and during our installation.  Highly recommended!  We would definitely do business again."
+         }, {
+             image: "./images/testimonials/jeny&luisgonzales.jpg",
+             customer: "Jeny & Luis Gonzales",
+             feedback: "We are very happy with the new look of our kitchen. The granite countertop made a big difference.  We got the Emerald Pearl and it came out very beautiful.  You will never get tired staring at those shimmiring blue pearlescent tones that shine at different angles.  You guys are great.  Excellent service and very professional.  We will definitely recommend Toronto Granite to our friends!"
+         }, {
+             image: "./images/testimonials/bill.jpg",
+             customer: "Bill and Denise Gardner",
+             feedback: "We are so pleased with our new countertops and island.  Mark and his team were very helpful and accomodating.  They take such pride in their work and cared that we were happy with our purchase.  All the reviews we read were exactly right!  It was an excellent customer service experience throughout.  We highly recommend Toronto Granite."
+         }, {
+             image: "./images/testimonials/geoff.jpg",
+             customer: "Geoff & Lina Francis",
+             feedback: "It was a thoroughly enjoyable experience working with Bob & his crew when they installed our new quartz countertop.  They have professional workmanship and are very fair to their customers. We will certainly refer their business to our friends.  Toronto Granite is a quality family run business."
+         }, {
+             image: "./images/testimonials/vitomirmarcina&family.jpg",
+             customer: "Vitomir Marcina & Family",
+             feedback: "Thank you very much for your fast service, and quality work. It brought more light, style and life to our kitchen!"
+         }, {
+             image: "./images/testimonials/markzayne.jpg",
+             customer: "Mark Zayne",
+             feedback: "Toronto Granite are the best priced company around. I know, I searched everywhere. The granite is spectacular and the finish is amazing. These guys are proffesional and extremely affordable. I saved well over $3000.00 compared to the prices in Windsor. I will definately be using these guys as my source of granite in the future. I am a contractor, and only use the best in my home. Thanks guys"
+         }, {
+             image: "./images/testimonials/chris(bronte).jpg",
+             customer: "Chris (Bronte)",
+             feedback: "Toronto Granite was recommended to me and they didn't disappoint. Very friendly family run business who are willing to go the extra mile. The job was completed on time and both the customer service and the final price couldn't be beat. I am planning a second project and will not even bother to waste my time getting a second quote."
+         }, {
+             image: "./images/testimonials/ceciliaarciga.jpg",
+             customer: "Cecilia Arciga",
+             feedback: "I am happy with the results.  Thank you so much!"
+         }, {
+             image: "./images/testimonials/rosieandfelipe.jpg",
+             customer: "Rosie and Felipe",
+             feedback: "Great service and product.  We love our kitchen, thank you very much for your fast service and great price.  For sure we will use them in the near future."
+         }, {
+             image: "./images/testimonials/eliassyriani.jpg",
+             customer: "Elias Syriani",
+             feedback: "I just wanted to personally thank you and Toronto Granite for helping us with our home Reno project with the most important and now the most beautiful finishing touch which exceeded our expectations! "
+         }, {
+             image: "./images/testimonials/karen&philsouthgate.jpg",
+             customer: "Karen & Phil Southgate",
+             feedback: "Excellent company to work with. Mark and co-workers were overly helpful in the selection of the counter choice ( we decided on Quartz) color,edge selection etc... All timelines were met - installation went smoothly. A very friendly, knowledgeable team. We were treated like family. I would definitely recommend this team! Stop looking and call now!! Thank you"
+         }, {
+             image: "./images/testimonials/silvanabezina.jpg",
+             customer: "Silvana Bezina",
+             feedback: "I recommend you to all my clients.  The quality is unsurpassed and the attention to detail is amazing.  Your commitment to getting the job done quickly is remarkable.  Thank you!  I LOVE my counter top!"
+         }, {
+             image: "./images/testimonials/elizabethmarchand.jpg",
+             customer: "Elizabeth Marchand",
+             feedback: "I'm still enjoying and admiring my currently snow covered outdoor oasis including the granite countertop that you installed.  I am looking forward to using it again this year when the weather warms up.  The granite has held up beautifully (it was installed 2 years ago); I've been so impressed with it that I thought I would drop you a line and a few photos for your website.  Being the renovators that we are, I am going to soon need some new countertops for my laundry room and I wouldn't dream of going anywhere else for this smaller project. I'm pleased to see you've added a large selection of new products including CeasarStone.  I'm hoping you can install something nice that will fit my budget, as you have with my other projects!  Thanks again Bob!  I'll call you when my cabinets are installed, in a few weeks."
+         }, {
+             image: "./images/testimonials/michael&saraiafrate.jpg",
+             customer: "Michael & Sara Iafrate",
+             feedback: "We can't thank Toronto Granite enough for the great service and beautiful looking counter. We looked at numerous other suppliers and Toronto Granite was by far the cheapest and there were no hidden charges, what you're quoted is what you pay. With Mark coming out to do the measure, and offering his suggestions and making sure everything was going to be ok, and the 2 installers who installed the counter with great care, I couldn't have been happier that we went with Toronto Granite. Everyone who sees the counter comments on how nice it looks and some of them are now thinking of putting granite in their kitchens, and they have your contact information. Great job Vlatko and team and look forward to doing business with you again."
+         }, {
+             image: "./images/testimonials/milena.jpg",
+             customer: "Milena",
+             feedback: "Very pleased with the professionalism and quality of work, this is a great family run business I would gladly recommend. A great experience with TorontoGranite crew. Not to mention very fast turn-around - I was expecting 2-3 weeks, but it was ready to be installed in a week!  Will definitely recommend them to my friends!"
+         }, {
+             image: "./images/testimonials/eileenfeng.jpg",
+             customer: "Eileen Feng",
+             feedback: "My Kitchen is done finally, just want to share the pictures with you. Thank you all in Toronto Granite to make it happen. My experience with all of you are super. I like my counter very much."
+         }, {
+             image: "./images/testimonials/davidzarzecny.jpg",
+             customer: "David Zarzecny",
+             feedback: "There is only one word to describe Toronto Granite AMAZING. Great product, Great price, Great people, your one stop shop. No need to look around. Thank You Toronto Granite keep up the great work."
+         }, {
+             image: "./images/testimonials/nimap.jpg",
+             customer: "Nima P",
+             feedback: "Honest and professional is how we can describe our latest project with Toronto Granite. The installers were polite and courteous, and the installation was impeccable. We would highly recommend this group of fine business people."
+         }, {
+             image: "./images/testimonials/ved.jpg",
+             customer: "Ved",
+             feedback: "I am happy with the results.  Thank you so much!"
+         }, {
+             image: "./images/testimonials/lauren.jpg",
+             customer: "Lauren ",
+             feedback: "We absoluetly love the way that our kitchen countertops turned out. We have an older home with walls that aren't exactly straight. Toronto granite did a fantastic job as adapting to the space and were able to get a perfect fit! We also called then to assist us with ensuring the outlets fit just right- they came back to shave down some of the stone- took only minutes! Wonderful experience- we absolutely love our juparana persa counters! Thanks to Toronto Granite- John in the warehouse was very helpful and patient as we took quite some time to pick the right piece! Nicola and Rda our installers were great! Thanks again! Lauren and Brock "
+         }
+
 
 
 
@@ -2298,7 +3150,12 @@ var silestone = [
      this.getDiamastone = function () {
         return diamastone;
      }                         
-
+     this.getGoldstar = function () {
+        return goldstar;
+     }
+     this.getTce = function () {
+        return tce;
+     }     
      this.getSliders = function(type) {
          var targetSliders = [];
          angular.forEach(sliders, function(sliders) {

@@ -74,11 +74,11 @@
 
 
                         <ul class=" nav navbar-nav pull-right">
-                            <li class="dropdown" ng-repeat="item in main_menu">
-                                <a class="dropdown-toggle" data-toggle="dropdown" ng-click="init_menu();item.active=true; consolef(item.submenu); navCollapsed = !navCollapsed" ng-class="{active: item.active}" href="{{item.href}}">{{item.name}}</a>
+                            <li class="dropdown" ng-repeat="item in main_menu" ng-click="closeMenu();">
+                                <a class="dropdown-toggle" data-toggle="dropdown" ng-click="init_menu();item.active=true; consolef(item.submenu);" ng-class="{active: item.active}" href="{{item.href}}">{{item.name}}</a>
                                 <ul class="dropdown-menu dropdown-menu-cover" ng-if="item.submenu !== undefined">
                                     <li ng-repeat="sub in item.submenu">
-                                        <a ng-click="init_menu();sub.active=false; navCollapsed = !navCollapsed" ng-class="{active: sub.active}" href="{{sub.href}}">{{sub.name}}</a>
+                                        <a ng-click="init_menu();sub.active=false;" ng-class="{active: sub.active}" href="{{sub.href}}">{{sub.name}}</a>
                                     </li>
                                 </ul>
                             </li>

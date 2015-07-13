@@ -11,17 +11,31 @@
 <div class="container container-pad50">
 <div class=" text-center container-pad20" style="padding-top:0;">
 	<h1><span>Caesarstone</span> countertops</h1>
+	<div class="text-left">
+		<h4><span>CaesarStone</span> was an early pioneer of the natural quartz surfaces market. In 1987, they had the revolutionary idea of using quartz, one of nature's hardest materials, to create a brand new surfacing product. With a continuous proactive approach to producing over 40 innovative colors and textures, <span>CaesarStone</span> consistently provides a premium quartz surface with remarkable style and endurance - complementing any design application, from classic to contemporary.</h4>
+	<br>
+	<h4>
+	<span>CaesarStone</span> is 93% crushed quartz. The quartz is combined with high-quality polymer resins and pigments and then compacted under intense vibration, vacuum and pressure into dense nonporous slabs. The slabs are post cured, gauged to precise thickness, and polished to an enduring shine.</h4>
+	<br>
+	<h4><span>CaesarStone</span> is nonporous and provides maximum resistance to staining and fully eliminates the need for any sealing. Its nonporous nature also prevents the growth of surface mold and bacteria due to the use of quartz as a key ingredient.</h4>
+	<br>
+	<h4>Nonporous, stain, scratch and heat resistant and backed by a residential lifetime warranty, <span>CaesarStone</span> is the ideal surface for kitchens, vanities and more. </h4>
+	</div>
 </div>
 <div class="row caesarstone-item" ng-repeat="item in caesarstone">
 <div class="container-pad20">
 	<h2>{{item.name}}</h2>
 
 </div>
-	<div class="col-lg-2 caesarstone-img" ng-repeat="listitem in item.list">
+	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 caesarstone-img" ng-repeat="listitem in item.list" style="margin-bottom:10px;">
 		<a href="{{listitem.image}}" rel="{{item.name}}" class="fancybox">
 			<img ng-src="{{listitem.thumbnail}}" alt="">
 		</a>
+	<div class="text-center">
+		<h4>{{listitem.title}}</h4>
+	</div>		
 	</div>
+
 
 </div>
 

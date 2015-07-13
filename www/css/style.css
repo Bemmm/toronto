@@ -263,7 +263,7 @@ h6 {
 }
 
 body h1 {
-    font-size: 52px;
+    font-size: 40px;
     margin-top: 0;
     line-height: 52px;
     font-weight: 300;
@@ -1181,9 +1181,16 @@ box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.3);
         z-index: 5 !important;
         padding: 0;
     }
+    .navbar-toggle .icon-bar{
+        background-color: #fff !important; 
+    }
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: #FF7E00;
-}
+    border-color: transparent;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+    }
     .map {
         padding-top: 20px;
      }

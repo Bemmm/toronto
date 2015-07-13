@@ -7,7 +7,6 @@ angular.module('myapp', ["ngRoute",
 .controller('TabsDemoCtrl', function ($scope, $window) {
 
 })
-
 .controller('ModalDemoCtrl', function ($scope, $modal, $log) {
 
   $scope.items = ['item1', 'item2', 'item3'];
@@ -264,7 +263,9 @@ $scope.silestone = [
         $scope.caesarstone = storage.getCaesarstone();
         $scope.silestone = storage.getSilestone();
         $scope.belenco = storage.getBelenco();
-        $scope.diamastone = storage.getDiamastone();        
+        $scope.diamastone = storage.getDiamastone();
+        $scope.goldstar = storage.getGoldstar();
+        $scope.tce = storage.getTce();                  
         console.log($scope.silestone);                                                                                                                                                                           
         $scope.init_menu = function () {
             angular.forEach(this.main_menu, function (value, key) {
@@ -285,10 +286,20 @@ $scope.silestone = [
                 active: false,
                 submenu: [
                     {
+                        name: "TCE Quartz",
+                        href: "#/TCE",
+                        active: false
+                             },                
+                    {
                         name: "Slab Inventory",
                         href: "#/slab-inventory",
                         active: false
                              },
+                    {
+                        name: "Goldstar Quartz",
+                        href: "#/goldstar",
+                        active: false
+                             },                             
                     {
                         name: "Glass Countertops",
                         href: "#/glass-countertops",
@@ -458,6 +469,15 @@ $scope.silestone = [
             .when('/belenco', {
                 templateUrl: '/page/belenco.html'
             })
+            .when('/TCE', {
+                templateUrl: '/page/TCE.html'
+            })
+            .when('/goldstar', {
+                templateUrl: '/page/goldstar.html'
+            })
+            .when('/quote', {
+                templateUrl: '/page/quote.html'
+            })                                          
             .otherwise({
                 redirectTo: '/'
             });
